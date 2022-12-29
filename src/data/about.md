@@ -1,14 +1,23 @@
-# Intro
-
-I graduated from Texas A&M University with a degree in Computer Science; however, my curiosity extends far beyond 1s and 0s. I also love entrepreneurship and business, mainly because they are platforms through which I can extend the impact of my mission. I enjoy using my passions, skills, creativity, aptitude for learning, and unique background to continue pushing the boundaries of what I am capable of so that I can maximize the value I contribute to the Universe.
-
 # Purpose
 
-I believe that every one of us has a potential of such an extreme magnitude, that most of us are unaware of what we are truly capable of. I live every day with the purpose and relentless determination to empower myself and others to discover and manifest their infinite potential.
+I believe that every one of us has a potential of such an extreme magnitude, that we are all unaware of what we are truly capable of. I live every day with the purpose and relentless determination to empower myself and others to discover and manifest their infinite potential.
+<br />
+<br />
+To me, there is nothing more beautiful than to discover and manifest the potential of who I want to become and what I want to create, achieve, and give in this life.
+
+And on the contrary, there is nothing that I fear more than to leave my full potenital undiscovered and untapped.
 
 # Currently
 
-I am a co-founder and the CTO of a startup named [Vize](https://www.vize.mx/acerca-de-nosotros) (short for Incentivizing Good), which is a Glassdoor for low skilled workers in developing countries. I will start working at Facebook as a Software Engineer in June 2021. At Vize, I wear many different hats. For example, I'm a full-stack developer, co-lead the engineering and the marketing teams, make sales calls to factories, plan product roadmaps and sprints, define and continuously track our key success metrics, and develop the company's culture.
+I am a Co-founder and the CEO at [Mindflow](https://www.mindflow.gg), where our mission is to inspire a generation of life-long doers to take joy in becoming 1% better every day. Currently, we are building a social app centered on personal growth. On Mindflow you can embark on growth journeys that are meaningful to you, track your progress, and share the journey of becoming better every day with friends.
+<br />
+<br />
+I'm also the host of a podcast named [Inventing The Future](https://www.youtube.com/@inventing.the.future), where I interview visionary tech entrepreneurs that are solving the world's biggest problems. Every episode features the story of the guest, what they're building, and the mindsets, tools, & habits that enable them to thrive.
+
+# Previously
+
+- I was the Co-founder & CTO at Vize, which is a Glassdoor for factory workers in Mexico. The main goal here was to improve working conditions for factory workers and in turn lower the insanely high turnover rates that factories experienced (turnover as high as 100-400% of their workforce every year).
+- I was a Software Engineer at Meta (Facebook), LinkedIn, and Goldman Sachs
 
 # Some history
 
@@ -21,38 +30,31 @@ I am a co-founder and the CTO of a startup named [Vize](https://www.vize.mx/acer
 - At 15, I developed an application named Widgets in Tabs for a school project, which got me featured on the [front cover of the local newspaper](https://www.yourconroenews.com/neighborhood/moco/news/article/Teen-develops-iTunes-app-Widget-Tabs-9261552.php).
 - At 16, I worked together with [The Texas Lyceum](https://www.texaslyceum.org/) and built 3 applications for their quarterly meetings. This was essentially my first job!
 - At 16, I also started an online eBay business where I bought items in bulk from China and resold them on eBay for a profit.
-- At 17, I became the captain of my high school's varsity soccer team.
-- At 18, I hired my first employee for my online eBay business.
 - At 19, I went to my first Tony Robbins seminar: [Unleash The Power Within](https://www.tonyrobbins.com/events/unleash-the-power-within/). This seminar changed my life in many ways. The most significant impact came from redefining my vision and purpose in life to extend far beyond myself. I have since been propelled on a journey where I have been experiencing an exponential growth trajectory. At 21, I went to [Business Mastery](https://www.tonyrobbins.com/events/business-mastery/). At 22, I went to [Life & Wealth Mastery](https://www.tonyrobbins.com/events/life-wealth-mastery/) and [Date with Destiny](https://www.tonyrobbins.com/events/date-with-destiny/).
 - At 19, I transferred to Texas A&M University to pursue a Computer Science degree.
 - At 20, I became a co-founder of [Vize](https://incentivizinggood.com/), a startup with a mission to give low-skilled workers in developing countries a voice by allowing them to anonymously share their work experiences with their community.
 - At 22, I went on a silent retreat, where I experimented what would happen to The Mind when it became deprived of human interaction and technology for 5 days. You can listen to the reflection of my experience [here](https://infinitemindspodcast.com/2020/04/30/2-silent-retreat-reflection-the-infinite-journey-of-discovering-your-true-self/) .
-- At 23, I completed internships with LinkedIn and Facebook as a Software Engineer and decided to accept Facebook's offer, where I will start working with them in June 2021. I also graduated from Texas A&M University with a degree in computer science and survived COVID!
-
-# The top 5 things I am interested in learning more about
-
-1. **Productivity:** managing my time better, reducing distractions, planning, making the most out of Notion, etc.
-2. **Learning How to Learn:** improving my reading speed & comprehension, improving my memory, strategies for note taking, etc.
-3. **Investing:** learning how to save money (frugality is a virtue), and learning more about value investing.
-4. **Sales:** I'm currently making calls to factories for my startup and it has been a fascinating challenge. How do you sell yourself and your product/service when you have no credibility? Learning to deal with rejection.
-5. **Product Management:** my biggest goal for 2021 is to finally land a job as an Associate Product Manager at a top teir tech company.
+- At 23, I completed internships with LinkedIn and Facebook as a Software Engineer and decided to accept Facebook's offer. I also graduated from Texas A&M University with a degree in computer science and survived COVID!
+- At 24, I fulfilled my dream of living in Silicon Valley when I moved to Palo Alto, California to start my full-time job at Meta (Facebook). I also started Mindflow in January 2022 and decided to leave my previous startup, Vize, to focus on Mindflow.
+- At 25, I decided to leave Meta after 9.5 months to go all in on Mindflow. I loved my job at Meta but in the end, Mindflow became an obsession and I felt that I was ready to be a full time founder.
 
 # I enjoy
 
 - **Sports:** Soccer, Tennis, Snowboarding, Ping Pong
-- **Professional Interests:** Entrepreneurship, Productivity, Product Management, Leading Others, Exponential Technologies (AI, VR/AR, 3D Printing, etc.), Systems Thinking / Creating Systems, Programming
+- **Professional Interests:** Entrepreneurship/Startups, Content Creation, Productivity, Product Management, Leading Others, Exponential Technologies (AI, Web 3, VR/AR, 3D Printing, etc.), Systems Thinking / Creating Systems, Programming
 - **Mentors:** Tony Robbins, Peter Diamandis, Elon Musk, August Bradley, Tim Ferriss, Keith Ferrazzi, Jim Kwik, Wim Hof, Naval Ravikant, Tom Bilyeu, Jordan Peterson, Simon Sinek, David Goggins, Shawn Stevenson, and many more.
 - **Personal Growth:** Reading, Journaling, Meditation, Fitness & Health, Learning & Learning How To Learn
-- **Podcasts:**([The Tim Ferris Show](https://tim.blog/podcast/), [The Radically Honest Podcast](https://radicallyhonestpodcast.com/), [How I Built This](https://www.npr.org/podcasts/510313/how-i-built-this), [Impact Theory](https://impacttheory.com/), [Naval](https://nav.al/), [How to Start a Startup](https://player.fm/series/how-to-start-a-startup), [Kwik Brain with Jim Kwik](https://podcasts.apple.com/us/podcast/kwik-brain-with-jim-kwik/id1208024744), and others)
-- [**Music**](https://open.spotify.com/user/126161110?si=80ma-a3bSpexjCqJ75TW-w): Flume, Above & Beyond, Ben Böhmer, Marsh, Seven Lions, Mac Miller, Drake, Travis Scott, Bad Bunny, Maluma, and so many more.
+- **Podcasts:**([The Tim Ferris Show](https://tim.blog/podcast/), [Moonshots & Mindsets by Peter Diamandis](https://radicallyhonestpodcast.com/), [How I Built This](https://www.npr.org/podcasts/510313/how-i-built-this), [Impact Theory](https://impacttheory.com/), [Naval](https://nav.al/), [How to Start a Startup](https://player.fm/series/how-to-start-a-startup), [Kwik Brain with Jim Kwik](https://podcasts.apple.com/us/podcast/kwik-brain-with-jim-kwik/id1208024744), and others)
+- [**Music**](https://open.spotify.com/user/126161110?si=80ma-a3bSpexjCqJ75TW-w): Flume, [Fred Again..](https://www.youtube.com/watch?v=c0-hvjV2A5Y), [Above & Beyond](https://www.youtube.com/watch?v=MEzU1HvBo6Y), [Ben Böhmer](https://www.youtube.com/watch?v=RvRhUHTV_8k), [Marsh](https://www.youtube.com/watch?v=KZLntv8hkQM), Seven Lions, Mac Miller, Drake, Travis Scott, Bad Bunny, J Balvin, Maluma, and so many more.
 - [Nature](https://www.youtube.com/watch?v=Y2SGfMcemaM)
 - Life
 - Being Present
+- Deep conversations with fascinating people
 
 # Fun facts
 
-- I am a first-generation immigrant from [Medellín](https://en.wikipedia.org/wiki/Medell%C3%ADn), Colombia. I visit Medellín every Christmas (except for the year with COVID in it).
-- I've seen my favorite artist, [Above & Beyond](https://open.spotify.com/artist/10gzBoINW3cLJfZUka8Zoe?si=Nsrna9tfStS4kiFpQHkMuA), 10 times! Their Anjunadeep label is what I now listen to 95% of the time.
+- I am a first-generation immigrant from [Medellín](https://en.wikipedia.org/wiki/Medell%C3%ADn), Colombia. I visit Medellín every Christmas.
+- I've seen my favorite artist, [Above & Beyond](https://open.spotify.com/artist/10gzBoINW3cLJfZUka8Zoe?si=Nsrna9tfStS4kiFpQHkMuA), 12 times! Their Anjunadeep label is what I now listen to 95% of the time.
 - I played the violin in middle school and loved it!
 
 # I dream of
@@ -60,9 +62,9 @@ I am a co-founder and the CTO of a startup named [Vize](https://www.vize.mx/acer
 - Manifesting my infinite potential and empowering others to do the same
 - Inspiring others to do the things that inspire them
 - Inventing the Future
-- Starting a company and becoming a CEO
 - Writing many best selling books
 - Having a podcast with millions of listeners
 - Becoming a billionaire
 - Creating a legacy that will echo throughout eternity
+- Having a beautiful family
 - Making my dreams a reality
