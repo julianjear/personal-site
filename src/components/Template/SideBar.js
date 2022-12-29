@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import ContactIcons from '../Contact/ContactIcons';
+import ContactIcons from "../Contact/ContactIcons";
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -12,32 +12,42 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
-        <p><a href="mailto:michael.l.dangelo@gmail.com">michael.l.dangelo@gmail.com</a></p>
+        <h2>Julian Alvarez</h2>
+        <p>
+          <a href="mailto:infinite@julian.ai">infinite@julian.ai</a>
+        </p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Michael. I like building things.
-        I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni, and
-        the co-founder and CTO of <a href="https://arthena.com">Arthena</a>. Before Arthena I was
-        at <a href="https://matroid.com">Matroid</a>
-        , <a href="https://planet.com">Planet</a>
-        , <a href="https://planetaryresources.com">Planetary Resources</a>
-        , <a href="https://facebook.com">Facebook</a>
-        , and <a href="https://seds.org">SEDS</a>.
+      <p>
+        Hi, I&apos;m Julian. I love building things, learning, and leading others. I am a Co-Founder
+        & the CEO at <a href="https://www.mindflow.gg">Mindflow</a>, and the host of the{" "}
+        <a href="https://www.youtube.com/@inventing.the.future">Inventing The Future Podcast</a>. I
+        am obsessed with the infinite journey of personal growth and love uncovering new ways to
+        continue expanding and manifesting my infinite potential.
       </p>
       <ul className="actions">
         <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+          {!window.location.pathname.includes("/resume") ? (
+            <Link to="/resume" className="button">
+              Learn More
+            </Link>
+          ) : (
+            <Link to="/about" className="button">
+              About Me
+            </Link>
+          )}
         </li>
       </ul>
     </section>
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.</p>
+      <p className="copyright">
+        &copy; Julian Alvarez <Link to="/">julian.ai</Link>.
+      </p>
     </section>
   </section>
 );
