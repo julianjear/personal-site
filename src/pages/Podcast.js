@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Text } from "@chakra-ui/react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Main from "../layouts/Main";
 
@@ -8,23 +8,58 @@ const url =
 
 // const SimpleForm = () => <MailchimpSubscribe url={url}/>
 
-const Index = () => (
-  <Main description={"Julian Alvarez's personal website."}>
-    <article className="post" id="index">
+const Podcast = () => (
+  <Main
+    description={
+      "Julian Alvarez's personal website. New York based Stanford ICME graduate, " +
+      "co-founder and CTO of Arthena, and YC Alumni."
+    }
+  >
+    <article className="post" id="podcast">
       <header>
         <div className="title">
-          <h2 data-testid="heading">
-            <Link to="/">Hello Universe! ¡Hola Amigos! 👋</Link>
-          </h2>
+          <h2 data-testid="heading">Inventing The Future Podcast 🎙</h2>
         </div>
       </header>
-      <p>
-        {" "}
-        Hello friends! I'm Julian and I'm an entrepreneur, software engineer, and podcaster. Please
-        feel free to read more <Link to="/about">about me</Link>. You can also check out my{" "}
-        <Link to="/resume">resume</Link> or <Link to="/contact">contact me</Link>.
-      </p>
-      <h2>Inventing The Future Podcast</h2>
+
+      <Text>
+        In January 2021, I launched the Inventing The Future podcast. These are a few of the reasons
+        why I decided to do so...
+      </Text>
+      <ol>
+        <li>
+          "The world's biggest problems are the world's biggest opportunities" - Peter Diamandis.
+          After acquiring this sage wisdom from Peter, I became interested in learning about the
+          world's biggest problem and increasing the awareness of these problems to young entreneurs
+          that want to make a dent in the universe.
+        </li>
+        <li>
+          There are several great podcast on entrepreneurship (such as How I Built This) but I
+          personally wanted a podcast that 1) focused specifically on tech entrepreneurship and 2)
+          was hosted by someone that was an entrepreneur themselves. I couldn't find a podcast like
+          this so I decided to do it myself!
+        </li>
+        <li>
+          <b>Super Networking Tool:</b> Having a podcast is a good excuse to talk to incredible
+          people and the people I was most interested in connecting with is tech founders.
+        </li>
+        <li>
+          <b>Mastering Communication:</b> I came to realize that the ability to community well and
+          ask good questions are two of the most important skills to master in life. Having a
+          podcast is a great way to exercise and nuture these skills. The reason a podcast is such a
+          good tool for improving these skills is because when you are having a conversation with
+          someone, you are so focused on trying to figure out WHAT to say, that you pay little
+          attention to HOW you are saying it. But when you hear back the recording of your own
+          voice, you can pay full attention to HOW you communicated.
+        </li>
+        <li>
+          <b>Building a Personal Brand:</b> I've learned to value the importance of building a
+          personal brand because everything becomes easier with a better personal brand. Any time
+          you launch something new (product, book, podcast, etc.) the first people that are going to
+          check it out and support you is the people in your personal and professional network. A
+          podcast is a great way to gain an audience and build credibility.
+        </li>
+      </ol>
       <a
         href="https://inventingthefuture.ai/"
         target="_blank"
@@ -116,4 +151,4 @@ const Index = () => (
   </Main>
 );
 
-export default Index;
+export default Podcast;
