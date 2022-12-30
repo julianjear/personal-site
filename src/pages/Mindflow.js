@@ -11,6 +11,7 @@ import {
   Input,
   Button,
 } from "@chakra-ui/react";
+import Main from "../layouts/Main";
 
 const Mindflow = () => (
   <Main description={"Julian's podcast, Inventing The Future"}>
@@ -21,9 +22,11 @@ const Mindflow = () => (
         </div>
       </header>
 
-      <Text mb="20px" fontWeight={700} fontSize="20px" textAlign="center">
-        In January 2021, I launched the Inventing The Future podcast
+      <Text mb="8px">
+        There are two stories from my life that in aggregate do a great job at communicating who I
+        am, how I have transformed, what I have achieved, and what I care about.
       </Text>
+      <Text mb="8px">Story #1 is about the discovery of my purpose.</Text>
 
       <Link
         href="https://inventingthefuture.ai/"
