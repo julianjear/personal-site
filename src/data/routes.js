@@ -9,6 +9,14 @@ const routes = [
     path: "/about",
   },
   {
+    label: "Story",
+    path: "/story",
+  },
+  {
+    label: "Mindflow",
+    path: "/mindflow",
+  },
+  {
     label: "Podcast",
     path: "/podcast",
   },
