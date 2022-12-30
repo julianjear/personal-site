@@ -54,6 +54,28 @@ const Story = () => (
         <br />I am now living in Palo Alto, California (Silicon Valley).
       </Text>
       <br />
+      <Image
+        src="images/MedellinWithMe.jpg"
+        alt="Photo of Julian in Medellin"
+        margin="0 auto"
+        borderRadius="12px"
+        width={["100%", "70%", "70%"]}
+      />
+      <Text mb="30px" textAlign="center" fontSize="14px" color="rgba(117, 117, 117, 1)">
+        Hanging out in the outskirts of Medellin (up in the mountains) or a recent trip during
+        Christmas 2022
+      </Text>
+      <Image
+        src="images/Medellin2.jpg"
+        alt="Photo of Medellin"
+        margin="0 auto"
+        borderRadius="12px"
+        width={["100%", "70%", "70%"]}
+      />
+      <Text mb="30px" textAlign="center" fontSize="14px" color="rgba(117, 117, 117, 1)">
+        Picture of Medellin
+      </Text>
+      <br />
       <br />
       <Heading as="h3" size="md" mb="12px">
         #1: The Discovery of My Purpose
@@ -89,12 +111,14 @@ const Story = () => (
         intend to do? Am I really just going to live an ordinary life?”
         <br />
         <br />
-        But then one day, I discovered Tony Robbins and went to one of his live seminars, Unleash
-        The Power Within. I absorbed Tony’s wisdom on life like a sponge and felt that someone had
-        finally given me a map for how to navigate my life and equipped me with the mindsets needed
-        to manifest my potential and navigate challenging times. I grew exponentially during the
-        seminar but the most profound breakthrough was that I discovered a purpose that extends far
-        beyond myself.
+        But then one day, I discovered Tony Robbins and went to one of his live seminars,{" "}
+        <Link href="https://www.upwnow.com" targe="_blank">
+          Unleash The Power Within.
+        </Link>{" "}
+        I absorbed Tony’s wisdom on life like a sponge and felt that someone had finally given me a
+        map for how to navigate my life and equipped me with the mindsets needed to manifest my
+        potential and navigate challenging times. I grew exponentially during the seminar but the
+        most profound breakthrough was that I discovered a purpose that extends far beyond myself.
         <br />
         <br />
         After the seminar, everything changed: I started reading a lot more, I started to journal, I
@@ -102,6 +126,15 @@ const Story = () => (
         ever before. For the first time in my life, I finally felt aligned with the ambition that I
         had felt for so long. I had awakened the Titan within me and broken the chains that were
         holding him back.
+        <br />
+        <br />
+        <Image
+          src="images/HoldingTonyBook.jpg"
+          alt="Julian holding a book of Tony Robbins"
+          margin="0 auto"
+          borderRadius="12px"
+          height={["400px", "500px", "500px"]}
+        />
         <br />
         <br />
         This experience taught me that we all have so much more potential than we could ever
@@ -130,7 +163,11 @@ const Story = () => (
             there’s no such thing as winning life or being the best human. In an infinite game, the
             pursuit of becoming better is better than the pursuit of becoming the best. And since
             the pursuit of becoming better is infinite, our potential for growth is infinite. Check
-            out this video explanation from Simon for a deeper dive.
+            out{" "}
+            <Link href="https://www.instagram.com/tv/CPQiFeOrvb4/?hl=en" target="_blank">
+              this video
+            </Link>{" "}
+            explanation from Simon for a deeper dive.
           </ListItem>
         </OrderedList>
         <br />
@@ -214,6 +251,18 @@ const Story = () => (
         isn’t just a tool, it’s a platform for enacting meaningful change.
         <br />
         <br />
+        <Image
+          src="images/iCalculator.jpeg"
+          alt="A screenshot of iCalculator on the App Store"
+          margin="0 auto"
+          borderRadius="12px"
+          height={["450px", "600px", "600px"]}
+        />
+        <Text textAlign="center" fontSize="14px" color="rgba(117, 117, 117, 1)">
+          Screenshot of iCalculator on the App Store
+        </Text>
+        <br />
+        <br />
         I ended up developing a couple of other apps during high school and decided to study
         computer science at Texas A&M University.
         <br />
@@ -279,12 +328,38 @@ const Story = () => (
         incredible growth opportunities. This was also the perfect opportunity to put all the
         personal growth from Tony Robbins’ seminars into practice.
         <br />
-        <br />
-        I did a 5 day silent retreat the day after my university decided to suspend me and dove deep
-        into my psyche, uncovering blind spots, reflecting on integrity and other values,
+        <br />I did a 5 day silent retreat the day after my university decided to suspend me and
+        dove deep into my psyche, uncovering blind spots, reflecting on integrity and other values,
         questioning why I did why I did, and how I could prevent something like this from happening
-        again in the future.
+        again in the future. If you'd like to hear more about my experiences and reflection from my
+        silent retreat, you can check out{" "}
+        <Link
+          href="https://open.spotify.com/episode/2MtGgijDIPydjdfLZIsT8m?si=bce3a15845ae4650"
+          target="_blank"
+        >
+          this podcast episode
+        </Link>{" "}
+        that I recorded on it.
         <br />
+        <br />
+        <Image
+          src="images/SilentRetreat.jpg"
+          alt="Picture from Julian's Silent Retreat"
+          margin="0 auto"
+          borderRadius="12px"
+          height={["300px", "500px", "500px"]}
+        />
+        <Text
+          textAlign="center"
+          fontSize="14px"
+          color="rgba(117, 117, 117, 1)"
+          width={["90%", "60%", "60%"]}
+          margin="0 auto"
+        >
+          Picture from my 5 day silent retreat, where I rented out an AirBnb out in the woods,
+          disconnected from the world (no internet) so that I could reconnect with a deeper part of
+          myself. I wrote day and night and learned a ton about who I am.
+        </Text>
         <br />
         The major mindset shift happened when I realized that if I had to go back to school, this
         would mean that I would have the opportunity to do more internships.
@@ -336,6 +411,34 @@ const Story = () => (
             mindset, anything is possible. In fact, impossible is an opinion.
           </ListItem>
         </OrderedList>
+        <br />
+        <Image
+          src="images/ANewEarth.jpg"
+          alt="Picture of the book A New Earth by Eckhart Tolle"
+          margin="0 auto"
+          borderRadius="12px"
+          height={["300px", "500px", "500px"]}
+        />
+        <Text
+          textAlign="center"
+          fontSize="14px"
+          color="rgba(117, 117, 117, 1)"
+          width={["90%", "60%", "60%"]}
+          margin="0 auto"
+        >
+          I read this book by Eckhart Tolle shortly after my university decided to suspend me for a
+          year. This book talks a lot about consciousness, awareness, and the ego. The book came at
+          an instrumental time for me because it help me cope with the loss of identity I had
+          experienced in losing my job and many other things. In many ways, this book helped me push
+          the reset button on who I was.
+        </Text>
+      </Text>
+      <br />
+      <Text>
+        Thanks for taking the time to read a snippet of my story. If there's anything that resonated
+        with you from my story or are feeling courageous enough to be vulnerable I invite you to
+        share your story & your mistakes with the world or with myself. Reach out at
+        infinite@julian.ai
       </Text>
     </article>
   </Main>
