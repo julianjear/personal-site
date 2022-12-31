@@ -34,7 +34,7 @@ Main.defaultProps = {
   children: null,
   fullPage: false,
   title: null,
-  description: "Julian Alvarez's personal website.",
+  description: "Julian is a founder, software engineer, and podcaster.",
 };
 
 export default Main;
