@@ -5,12 +5,12 @@ const routes = [
     path: "/",
   },
   {
-    label: "About",
-    path: "/about",
-  },
-  {
     label: "Story",
     path: "/story",
+  },
+  {
+    label: "About",
+    path: "/about",
   },
   {
     label: "Mindflow",

@@ -9,7 +9,7 @@ And on the contrary, there is nothing that I fear more than to leave my full pot
 
 # Currently
 
-I am a Co-founder and the CEO at [Mindflow](https://www.mindflow.gg), where our mission is to inspire a generation of life-long doers to take joy in becoming 1% better every day. Currently, we are building a social app centered on personal growth. On Mindflow you can embark on growth journeys that are meaningful to you, track your progress, and share the journey of becoming better every day with friends.
+I am a Co-founder and the CEO at [Mindflow](https://www.mindflow.gg), where our mission is to inspire a generation of life-long doers to take joy in becoming 1% better every day. Currently, we are building a social app centered on personal growth. On Mindflow, you can embark on growth journeys that are meaningful to you, track your progress, and share the journey of becoming better every day with friends.
 <br />
 <br />
 I'm also the host of a podcast named [Inventing The Future](https://www.youtube.com/@inventing.the.future), where I interview visionary tech entrepreneurs that are solving the world's biggest problems. Every episode features the story of the guest, what they're building, and the mindsets, tools, & habits that enable them to thrive.
