@@ -1,4 +1,4 @@
-# Purpose
+### **Purpose**
 
 I believe that every one of us has a potential of such an extreme magnitude, that we are all unaware of what we are truly capable of. I live every day with the purpose and relentless determination to empower myself and others to discover and manifest their infinite potential.
 <br />
@@ -6,20 +6,26 @@ I believe that every one of us has a potential of such an extreme magnitude, tha
 To me, there is nothing more beautiful than to discover and manifest the potential of who I want to become and what I want to create, achieve, and give in this life.
 
 And on the contrary, there is nothing that I fear more than to leave my full potenital undiscovered and untapped.
+<br />
+<br />
 
-# Currently
+### **Currently**
 
 I am a Co-founder and the CEO at [Mindflow](https://www.mindflow.gg), where our mission is to inspire a generation of life-long doers to take joy in becoming 1% better every day. Currently, we are building a social app centered on personal growth. On Mindflow, you can embark on growth journeys that are meaningful to you, track your progress, and share the journey of becoming better every day with friends.
 <br />
 <br />
 I'm also the host of a podcast named [Inventing The Future](https://www.youtube.com/@inventing.the.future), where I interview visionary tech entrepreneurs that are solving the world's biggest problems. Every episode features the story of the guest, what they're building, and the mindsets, tools, & habits that enable them to thrive.
+<br />
+<br />
 
-# Previously
+### **Previously**
 
 - I was the Co-founder & CTO at Vize, which is a Glassdoor for factory workers in Mexico. The main goal here was to improve working conditions for factory workers and in turn lower the insanely high turnover rates that factories experienced (turnover as high as 100-400% of their workforce every year).
 - I was a Software Engineer at Meta (Facebook), LinkedIn, and Goldman Sachs
+  <br />
+  <br />
 
-# Some history
+### **Some history**
 
 - Born in San Antonio, Texas.
 - Moved to [Medellín, Colombia](https://cdn.kimkim.com/files/a/content_articles/featured_photos/1ad949c863a201daf8589433b4b4f53dcea9bacb/big-2c865b81ba2b66d13bb814a304041332.jpg) 1 month after I was born. I lived there for 4 years.
@@ -37,8 +43,10 @@ I'm also the host of a podcast named [Inventing The Future](https://www.youtube.
 - At 23, I completed internships with LinkedIn and Facebook as a Software Engineer and decided to accept Facebook's offer. I also graduated from Texas A&M University with a degree in computer science and survived COVID!
 - At 24, I fulfilled my dream of living in Silicon Valley when I moved to Palo Alto, California to start my full-time job at Meta (Facebook). I also started Mindflow in January 2022 and decided to leave my previous startup, Vize, to focus on Mindflow.
 - At 25, I decided to leave Meta after 9.5 months to go all in on Mindflow. I loved my job at Meta but in the end, Mindflow became an obsession and I felt that I was ready to be a full time founder.
+  <br />
+  <br />
 
-# I enjoy
+### **I enjoy**
 
 - **Sports:** Soccer, Tennis, Snowboarding, Ping Pong
 - **Professional Interests:** Entrepreneurship/Startups, Content Creation, Productivity, Product Management, Leading Others, Exponential Technologies (AI, Web 3, VR/AR, 3D Printing, etc.), Systems Thinking / Creating Systems, Programming
@@ -50,14 +58,18 @@ I'm also the host of a podcast named [Inventing The Future](https://www.youtube.
 - Life
 - Being Present
 - Deep conversations with fascinating people
+  <br />
+  <br />
 
-# Fun facts
+### **Fun facts**
 
 - I am a first-generation immigrant from [Medellín](https://en.wikipedia.org/wiki/Medell%C3%ADn), Colombia. I visit Medellín every Christmas.
 - I've seen my favorite artist, [Above & Beyond](https://open.spotify.com/artist/10gzBoINW3cLJfZUka8Zoe?si=Nsrna9tfStS4kiFpQHkMuA), 12 times! Their Anjunadeep label is what I now listen to 95% of the time.
 - I played the violin in middle school and loved it!
+  <br />
+  <br />
 
-# I dream of
+### **I dream of**
 
 - Manifesting my infinite potential and empowering others to do the same
 - Inspiring others to do the things that inspire them

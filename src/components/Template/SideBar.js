@@ -28,6 +28,7 @@ const SideBar = () => (
         am obsessed with the infinite journey of personal growth and love uncovering new ways to
         continue expanding and manifesting my infinite potential.
       </p>
+      <br />
       <ul className="actions">
         <li>
           {!window.location.pathname.includes("/resume") ? (
@@ -45,6 +46,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
+      <br />
       <p className="copyright">
         &copy; Julian Alvarez <Link to="/">julian.ai</Link>.
       </p>
