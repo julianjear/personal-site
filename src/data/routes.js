@@ -12,10 +12,10 @@ const routes = [
     label: "About",
     path: "/about",
   },
-  // {
-  //   label: "Mindflow",
-  //   path: "/mindflow",
-  // },
+  {
+    label: "Mindflow",
+    path: "/mindflow",
+  },
   {
     label: "Podcast",
     path: "/podcast",

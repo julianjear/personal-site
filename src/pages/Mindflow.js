@@ -14,221 +14,298 @@ import {
 import Main from "../layouts/Main";
 
 const Mindflow = () => (
-  <Main description={"Julian's podcast, Inventing The Future"}>
+  <Main description={"Julian's startup, Mindflow"}>
     <article className="post" id="podcast">
       <header>
         <div className="title">
-          <h2 data-testid="heading">Story 📖</h2>
+          <h2 data-testid="heading">The Mindflow Story 🌱</h2>
         </div>
       </header>
 
-      <Text mb="8px">
-        There are two stories from my life that in aggregate do a great job at communicating who I
-        am, how I have transformed, what I have achieved, and what I care about.
-      </Text>
-      <Text mb="8px">Story #1 is about the discovery of my purpose.</Text>
-
-      <Link
-        href="https://inventingthefuture.ai/"
-        target="_blank"
-        rel="noreferrer"
-        style={{ textDecoration: "none", borderBottomStyle: "none" }}
-        mb="30px"
-      >
+      <Text>
+        I co-founded Mindflow in January 2022. Our mission is to inspire a generation of life-long
+        doers to take joy in becoming 1% better every day.
+        <br />
+        <br />
+        This mission directly connects with my massively transformative purpose to empower myself
+        and others to discover and manifest their infinite potential.
+        <br />
+        <br />
+        I’m grateful to be on this journey with my brilliant co-founder, David Glass.
+        <br />
+        <br />
         <Image
           src="images/ITFCover.jpg"
-          alt="Inventing The Future Cover"
+          alt="David and Julian"
           margin="0 auto"
           mb="30px"
           borderRadius="12px"
         />
-      </Link>
+        Since we started Mindflow, we have tested out 5 different ideas. I’ll tell the story of
+        Mindflow by giving a brief overview on each of the ideas, why we pivoted, and the lessons we
+        gathered from each of them.
+        <br />
+        <br />
+      </Text>
 
       <Heading as="h3" size="md" mb="12px">
-        What is it?
+        Idea #1: Learn-to-Earn — The Genesis of Mindflow
       </Heading>
       <Text>
-        I highlight the stories & minds of visionary tech entrepreneurs that are solving the world's
-        biggest problems 🚀
+        Mindflow was born out of an idea around a concept named learn-to-earn, which was inspired
+        from the boom of play-to-earn games, such as Axie Infinity.
+        <br />
+        <br />
+        In a play to earn game like Axie Infinity, you can buy Axie NFTs and use them to play the
+        game and from playing the game, you earn a cryptocurrency named SLP. I invested in Axie by
+        sponsoring 20 people across the Philippines and Venezuela. This means that I bought the Axie
+        NFTs and let the scholars use them to play the game and in exchange we would split earnings.
+        In the beginning, this was very lucrative and these scholars in the Philippines and
+        Venezuela were making more money playing this game compared to almost any job they could
+        get.
+        <br />
+        <br />
+        I was mind blow by the economic opportunity this was creating but hated the fact that they
+        were playing video games. What if we could apply this same concept to something a bit more
+        productive, such as learning? Thus, the idea for learn-to-earn was born.
+        <br />
+        <br />
+        We launched our MVP for the learn-to-earn platform in March of 2022. The basic idea is that
+        you read text from a learning lesson, respond to a reflection question based on what you
+        learned and if we approve your response (based on it not being spam), you will earn 100
+        points, which equates to $0.50 worth of the MATIC cryptocurrency.
+        <br />
+        <br />
+        In this MVP, we were paying users out of pocket and losing money but we were only doing this
+        while testing the initial idea and our plan was to eventually adopt an economic model
+        similar to that of Axie Infinity. The platform is still live and you can check it out here
+        https://www.learn.mindflow.gg. You can also check out a demo of the product here
+        https://www.loom.com/share/c655df3090ad4728a363aeabe9b99ed4.
+        <br />
+        <br />
+        We got over 200 users in the first month and had some strong early interest from a couple
+        low-income users. However, these are some of the reasons as to why we decided to pivot.
+        <OrderedList>
+          <ListItem>
+            <b>Uncertainty in the Economic Model:</b> Our economic model was very similar to Axie
+            Infinity’s but Axie Infinity was crashing at the moment and it’s long term
+            sustainability was uncertain (Axle’s crypto SLP has dropped more than 99% since its
+            peak).
+          </ListItem>
+          <ListItem>
+            <b>Intrinsic {">"} Extrinsic Motivation:</b> Paying people to learn is an extrinsic
+            motivation to learn. We ended up reading research on how extrinsic motivators, such as
+            money, can often get in the way of someone’s intrinsic motivation to want to do
+            something. In other words, if you are being paid to do something, you are likely to
+            believe that you are doing that thing for money rather than because you actually enjoy
+            it. As a result, we were afraid that creating extrinsic motivations around learning
+            could be harmful. You can check out a brief overview of our findings here:
+            https://mindflowgg.notion.site/Intrinsic-and-Extrinsic-Motivators-on-Mindflow-7f691518794b4778ae908da4218ee803
+          </ListItem>
+          <ListItem>
+            <b>Action {">"} Consumption:</b> We came to realize that the real growth happens when
+            you take action, not when you consume content. We therefore wanted to build something
+            that had a greater emphasis on taking action.
+          </ListItem>
+          <ListItem>
+            <b>Low-Income People:</b> The people that resonated with this product the most were
+            low-income people in developing countries. I care deeply about serving these people but
+            the problem with serving this demographic is that we are not those people and don’t know
+            almost any people that are low-income so there would be a lot of cultural differences
+            and pain points that would be easy to miss. We thought it would be better to start by
+            solving problems our own problem or the problems of people we know.
+          </ListItem>
+        </OrderedList>
       </Text>
-      <Text mb="24px">
-        Every episode features the story of the guest, what they're building, and the mindsets,
-        tools, & habits that enable them to thrive.
-      </Text>
+      <br />
+      <br />
 
       <Heading as="h3" size="md" mb="12px">
-        Why did I start it?
+        Idea #2: The Mindflow Games
       </Heading>
-
-      <OrderedList mb="24px">
-        <ListItem>
-          "The world's biggest problems are the world's biggest opportunities" - Peter Diamandis.
-          After acquiring this sage wisdom from Peter, I became interested in learning about the
-          world's biggest problem and increasing the awareness of these problems to young entreneurs
-          that want to make a dent in the universe.
-        </ListItem>
-        <ListItem>
-          There are several great podcast on entrepreneurship (such as How I Built This) but I
-          personally wanted a podcast that 1) focused specifically on tech entrepreneurship and 2)
-          was hosted by someone that was an entrepreneur themselves. I couldn't find a podcast like
-          this so I decided to do it myself!
-        </ListItem>
-        <ListItem>
-          <b>Super Networking Tool:</b> Having a podcast is a good excuse to talk to incredible
-          people and the people I was most interested in connecting with is tech founders.
-        </ListItem>
-        <ListItem>
-          <b>Mastering Communication:</b> I came to realize that the ability to community well and
-          ask good questions are two of the most important skills to master in life. Having a
-          podcast is a great way to exercise and nuture these skills. The reason a podcast is such a
-          good tool for improving these skills is because when you are having a conversation with
-          someone, you are so focused on trying to figure out WHAT to say, that you pay little
-          attention to HOW you are saying it. But when you hear back the recording of your own
-          voice, you can pay full attention to HOW you communicated.
-        </ListItem>
-        <ListItem>
-          <b>Building a Personal Brand:</b> I've learned to value the importance of building a
-          personal brand because everything becomes easier with a better personal brand. Any time
-          you launch something new (product, book, podcast, etc.) the first people that are going to
-          check it out and support you is the people in your personal and professional network. A
-          podcast is a great way to gain an audience and build credibility.
-        </ListItem>
-      </OrderedList>
-
-      <Heading as="h3" size="md" mb="12px">
-        Where to Listen?
-      </Heading>
-
-      <OrderedList mb="24px">
-        <ListItem>
-          <Link href="https://www.youtube.com/@inventing.the.future" target="_blank">
-            YouTube (high quality video production recorded in a studio)
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://bit.ly/itf-apple" target="_blank">
-            Apple Podcasts
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://bit.ly/itf-spotify" target="_blank">
-            Spotify
-          </Link>
-        </ListItem>
-      </OrderedList>
-
-      <Heading as="h3" size="md" mb="12px">
-        Socials
-      </Heading>
-      <Text mb="6px">
-        Follow our socials for content on startup & tech wisdom + news, including but not
-        exclusively snippets from podcast interviews
+      <Text>
+        The Mindflow Games was a multi-day competition where participants paid $25 to compete for
+        the chance to win prizes.
+        <br />
+        <br />
+        Once the Mindflow Games began, you would receive daily quests in the categories of Learning,
+        Reflection, Seek Discomfort, Relationships, and Wellness. You get points for completing
+        quests and when the competition ends, the participants at the top of the leaderboard would
+        earn different amounts of money. The main idea was to make it fun and easy for growth-driven
+        people to take action and become a better version of themselves, with a community of other
+        like-minded individuals.
+        <br />
+        <br />
+        After running 2 seasons of the Mindflow Games (which we ran using Notion) with 48
+        participants that paid $25 to participate and completed an aggregate of over 400 quests, we
+        learned that the convenience and social elements were both the most impactful motivators in
+        taking action and the most enjoyable parts of the experience.
+        <br />
+        <br />
+        Therefore, when we decided to dial up the social and convenience factors of the experience
+        by creating a social app that gave users daily quests.
+        <br />
+        <br />
+        This pivot, just like the last, did not happen because what we were doing was not working
+        but rather because we identified what we believed to be a much bigger and better
+        opportunity.
+        <br />
+        <br />
+        You can check out a demo of how the Mindflow Games works here:
+        https://www.loom.com/share/33b003feb3184bd9b6d91dcfdd0497e6
+        <br />
+        <br />
+        We also managed to raise $220k for our pre-seed round around this time.
       </Text>
-      <HStack mb="30px">
-        <Button
-          as="a"
-          leftIcon={<FaTiktok />}
-          href="https://tiktok.com/@inventing.the.future"
-          target="_blank"
-        >
-          TikTok
-        </Button>
-        <Button
-          as="a"
-          leftIcon={<FaInstagram />}
-          href="https://www.instagram.com/inventing.the.future"
-          target="_blank"
-        >
-          Instagram
-        </Button>
-        <Button as="a" leftIcon={<FaTwitter />} href="https://twitter.com/ITFpod" target="_blank">
-          Twitter
-        </Button>
-        <Button
-          as="a"
-          leftIcon={<FaYoutube />}
-          href="https://www.youtube.com/@inventing.the.future"
-          target="_blank"
-        >
-          YouTube
-        </Button>
-        <Button
-          as="a"
-          leftIcon={<FaLinkedin />}
-          href="https://www.linkedin.com/company/inventingthefuture"
-          target="_blank"
-        >
-          LinkedIn
-        </Button>
-      </HStack>
+      <br />
+      <br />
 
-      {/* <Heading as="h3" size="md" mb="12px">
-        Newsletter
+      <Heading as="h3" size="md" mb="12px">
+        Idea #3: Growth Made Social — The Mindflow App
       </Heading>
-      <p>
-        Subscribe to my newsletter to recieve updates on new episodes. I'll also share notes,
-        insights, wisdom, tools, and resources that are designed to help you become a better
-        entrepreneur.{" "}
-      </p>
-      <MailchimpSubscribe
-        url={url}
-        render={({ subscribe, status, message }) => (
-          <div>
-            <Input onSubmitted={(formData) => subscribe(formData)} />
-            <Button onClick={() => subscribe("infinite@julian.ai")}>Submit</Button>
-            {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-            {status === "error" && (
-              <div style={{ color: "red" }} dangerouslySetInnerHTML={{ __html: message }} />
-            )}
-            {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
-          </div>
-        )}
+      <Text>
+        After going into full build mode, we ended up launching the Mindflow app in August 2022. You
+        can check out the app here: https://apple.co/3QFdPlE
+        <br />
+        <br />
+        The initial idea behind the Mindflow App was to create a social app where users receive
+        daily bite-sized quests that make it fun and easy to take action and grow alongside their
+        friends.
+        <br />
+        <br />
+        After a couple of weeks, we realized that people enjoyed getting daily quests but they
+        weren’t always relevant to what was interesting / valuable to them so they either
+        deprioritized them or stopped checking quests altogether and eventually churned. When we
+        spoke with users, many mentioned they wanted the flexibility to grow in the ways that were
+        meaningful to them.
+        <br />
+        <br />
+        As a result, we launched Growth Journeys within the Mindflow App
+      </Text>
+      <br />
+      <br />
+
+      <Heading as="h3" size="md" mb="12px">
+        Idea #4: Growth Journeys
+      </Heading>
+      <Text>
+        Growth Journeys is a feature within the Mindflow app that enables you to create a growth
+        journey for anything you want to grow in, such as Running, Weightlifting, Reading, Learning
+        Spanish, etc. The idea is to have a space for you to document your hobbies, track your
+        progress, learning efforts, and mental growth all in one spot and share the journey of
+        becoming better every day with friends.
+        <br />
+        <br />
+        We launched Growth Journeys in Oct 2022 and after 3 months, it still hasn't generated good
+        traction.
+        <br />
+        <br />
+        INCLUDE DEMO
+      </Text>
+      <br />
+      <br />
+
+      <Heading as="h3" size="md" mb="12px">
+        Mini retrospective on the Mindflow App
+      </Heading>
+      <Text>
+        We launched Mindflow on August 20th, 2022 (4 months from time of writing) and since then,
+        there has been over over 700 downloads and 500 posts created. Retention is only good (1+
+        month) for a very small percentage of users and almost all users churn after 2 months. And
+        perhaps worst of all for a social app, users were not inviting their friends.
+        <br />
+        <br />
+        When we talked to users, there are things that they found valuable from the experience but
+        overall, it appears that what we have built is a vitamin rather than a pain killer (our
+        product is a nice to have).
+        <br />
+        <br />
+        There’s a lot of mistakes we have made that led to this result but perhaps one of the
+        biggest one is that we failed to nail down on a specific pain point and build a solution
+        that does an exceptional job of tackling that pain point. This mistake is a painful one
+        because it’s a failure to apply and internalize one of the most fundamental startup
+        principles.
+        <br />
+        <br />
+        As a result, we decided to take a step back and brainstorm different potential directions we
+        could take and ideas we could test out. If you’d like an overview of the creative process
+        behind how my co-founder and I came up with 240 different ideas and narrowed it down to one
+        idea to test out, check out this thread on Twitter:
+        https://twitter.com/InfiniteJuliaan/status/1602400809987149824?s=20
+      </Text>
+      <br />
+      <br />
+
+      <Heading as="h3" size="md" mb="12px">
+        Idea #5: Sparkin Joy — Connecting the World Through Gratitude
+      </Heading>
+      <Text>
+        The first idea we decided to test out after brainstorming a lot of different ideas is called
+        Sparkin Joy. The idea here is that you can write a gratitude letter to someone you care
+        about and when you do so, a “gratitude chain” is created. If you receive a gratitude letter,
+        you have 48 hours to send a gratitude letter to someone new before the chain breaks. The
+        goal is to keep the chain alive for as long as possible.
+        <br />
+        <br />
+        The core assumption here is that if you receive a gratitude letter, you’ll feel so grateful
+        that you will want to pay it forward and send a gratitude letter to someone else
+        (reciprocity).
+        <br />
+        <br />
+        Additionally, we think there is power in creating the space and inviting someone to express
+        gratitude to someone else. Often times we feel grateful but we don’t express it. And feeling
+        gratitude for someone but not expressing it is like wrapping a present and not giving it to
+        someone
+        <br />
+        <br />
+        We launched Sparkin Joy in late Dec 2022 (few days as of this writing) and are currently
+        testing our initial MVP to see how likely people are to keep gratitude chains alive. If more
+        than 25% of chains are still alive after 10 days, we’ll invest further into this idea.
+        Otherwise, we’ll go back to the drawing board and experiment with another idea.
+        <br />
+        <br />
+        You can check out the live MVP of SparkinJoy and write a gratitude letter to someone at
+        https://sparkinjoy.com.
+      </Text>
+      <br />
+      <br />
+
+      <Heading as="h3" size="md" mb="12px">
+        Closing Thoughts
+      </Heading>
+      <Text>
+        This is the beauty and challenge of the 0 to 1 journey!
+        <br />
+        <br />
+        One of my biggest lessons along this journey has been that it often takes many iterations to
+        find product-market fit. This means that it’s important to minimize your burn rate so that
+        you can survive long enough to have enough shots on goal until you manage to score. The more
+        you experiment and iterate, the more you learn, and the more likely you are to succeed. In
+        my mind, it’s only a matter of when not if we hit a home run.
+        <br />
+        <br />
+        If you’d like to follow along my startup journey and learn from my experiences, I invite you
+        to follow me on Twitter: https://twitter.com/InfiniteJuliaan
+        <br />
+        <br />
+        If you’d like to get to know my co-founder, David, better and hear more about the Mindflow
+        journey, check out this interview I did with him on my podcast:
+        (https://www.youtube.com/watch?v=kqhTV7vI-ww)
+        <br />
+        <br />
+        Feel free to reach out if you’d like to learn more about Mindflow or have any thoughts on
+        what I shared here: infinite@julian.ai.
+      </Text>
+      <br />
+      <br />
+
+      <Image
+        src="images/ITFCover.jpg"
+        alt="David and Julian"
+        margin="0 auto"
+        mb="30px"
+        borderRadius="12px"
       />
-      <br /> */}
-
-      <Heading as="h3" size="md" mb="12px">
-        Other Podcasts I Have Been Featured In...
-      </Heading>
-
-      <OrderedList mb="24px">
-        <ListItem>
-          <Link
-            href="https://open.spotify.com/episode/5GgWh0UKGTa9rNzMKr7kss?si=ed3546217df14ef5"
-            target="_blank"
-          >
-            "Wish I Knew..." Podcast with Gary Nowak — A reflection on my time at Meta as a Software
-            Engineer and at Vize as the CTO - Released July, 2022
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link
-            href="https://open.spotify.com/episode/2zf8M1synRribYMTpsul7V?si=a29b928170b34f00"
-            target="_blank"
-          >
-            Inventing The Future Solo Episode — Telling three stories of the most impactful turning
-            points in my life 1) recognition of my privilege 2) the discovery of my purpose 3) my
-            biggest mistake — Released January, 2022
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link
-            href="https://open.spotify.com/episode/6K3xFCreMFm61poGGua1IF?si=l43O1o6ASASvDewzWC3oJQ"
-            target="_blank"
-          >
-            "The Captain's Lifestyle" with Taylor Morgan — Speaking about the importance of health
-            and vitality to maximize productivity and avoid burnout — Released June, 2021
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link
-            href="https://open.spotify.com/episode/6hjRu1RrZCU3hOLxcNfWQT?si=c1653f0a15a04f9a"
-            target="_blank"
-          >
-            "Radically Honest" Podcast with Dasom Lee — Being vulnerable and talking about my
-            biggest mistake and the challenges of being a founder — Released July, 2020
-          </Link>
-        </ListItem>
-      </OrderedList>
     </article>
   </Main>
 );
