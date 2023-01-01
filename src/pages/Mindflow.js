@@ -11,6 +11,7 @@ import {
   Input,
   Button,
 } from "@chakra-ui/react";
+import { Link as InternalLink } from "react-router-dom";
 import Main from "../layouts/Main";
 
 const Mindflow = () => (
@@ -35,10 +36,11 @@ const Mindflow = () => (
         <br />
         <br />
         <Image
-          src="images/ITFCover.jpg"
+          src="images/DavidAndMe.jpg"
           alt="David and Julian"
           margin="0 auto"
           mb="30px"
+          width={["100%", "70%", "70%"]}
           borderRadius="12px"
         />
         Since we started Mindflow, we have tested out 5 different ideas. I’ll tell the story of
@@ -78,9 +80,15 @@ const Mindflow = () => (
         <br />
         In this MVP, we were paying users out of pocket and losing money but we were only doing this
         while testing the initial idea and our plan was to eventually adopt an economic model
-        similar to that of Axie Infinity. The platform is still live and you can check it out here
-        https://www.learn.mindflow.gg. You can also check out a demo of the product here
-        https://www.loom.com/share/c655df3090ad4728a363aeabe9b99ed4.
+        similar to that of Axie Infinity. The platform is still live and you can{" "}
+        <Link href="https://www.learn.mindflow.gg" target="_blank">
+          check it out here
+        </Link>
+        . You can also check out a demo of the product{" "}
+        <Link href="https://www.loom.com/share/c655df3090ad4728a363aeabe9b99ed4" target="_blank">
+          here
+        </Link>
+        .
         <br />
         <br />
         We got over 200 users in the first month and had some strong early interest from a couple
@@ -99,8 +107,14 @@ const Mindflow = () => (
             something. In other words, if you are being paid to do something, you are likely to
             believe that you are doing that thing for money rather than because you actually enjoy
             it. As a result, we were afraid that creating extrinsic motivations around learning
-            could be harmful. You can check out a brief overview of our findings here:
-            https://mindflowgg.notion.site/Intrinsic-and-Extrinsic-Motivators-on-Mindflow-7f691518794b4778ae908da4218ee803
+            could be harmful. You can check out a brief overview of our findings{" "}
+            <Link
+              href="https://mindflowgg.notion.site/Intrinsic-and-Extrinsic-Motivators-on-Mindflow-7f691518794b4778ae908da4218ee803"
+              target="_blank"
+            >
+              here
+            </Link>
+            .
           </ListItem>
           <ListItem>
             <b>Action {">"} Consumption:</b> We came to realize that the real growth happens when
@@ -151,8 +165,11 @@ const Mindflow = () => (
         opportunity.
         <br />
         <br />
-        You can check out a demo of how the Mindflow Games works here:
-        https://www.loom.com/share/33b003feb3184bd9b6d91dcfdd0497e6
+        You can check out a demo of how the Mindflow Games works{" "}
+        <Link href="https://www.loom.com/share/33b003feb3184bd9b6d91dcfdd0497e6" target="_blank">
+          here
+        </Link>
+        .
         <br />
         <br />
         We also managed to raise $220k for our pre-seed round around this time.
@@ -165,7 +182,11 @@ const Mindflow = () => (
       </Heading>
       <Text>
         After going into full build mode, we ended up launching the Mindflow app in August 2022. You
-        can check out the app here: https://apple.co/3QFdPlE
+        can check out the app{" "}
+        <Link href="https://apple.co/3QFdPlE" target="_blank">
+          here
+        </Link>
+        .
         <br />
         <br />
         The initial idea behind the Mindflow App was to create a social app where users receive
@@ -198,9 +219,6 @@ const Mindflow = () => (
         <br />
         We launched Growth Journeys in Oct 2022 and after 3 months, it still hasn't generated good
         traction.
-        <br />
-        <br />
-        INCLUDE DEMO
       </Text>
       <br />
       <br />
@@ -230,8 +248,14 @@ const Mindflow = () => (
         As a result, we decided to take a step back and brainstorm different potential directions we
         could take and ideas we could test out. If you’d like an overview of the creative process
         behind how my co-founder and I came up with 240 different ideas and narrowed it down to one
-        idea to test out, check out this thread on Twitter:
-        https://twitter.com/InfiniteJuliaan/status/1602400809987149824?s=20
+        idea to test out,{" "}
+        <Link
+          href="https://twitter.com/InfiniteJuliaan/status/1602400809987149824?s=20"
+          targe="_blank"
+        >
+          check out this thread on Twitter
+        </Link>
+        .
       </Text>
       <br />
       <br />
@@ -265,7 +289,10 @@ const Mindflow = () => (
         <br />
         <br />
         You can check out the live MVP of SparkinJoy and write a gratitude letter to someone at
-        https://sparkinjoy.com.
+        <Link href="https://sparkinjoy.com" targe="_blank">
+          https://sparkinjoy.com
+        </Link>
+        .
       </Text>
       <br />
       <br />
@@ -285,12 +312,19 @@ const Mindflow = () => (
         <br />
         <br />
         If you’d like to follow along my startup journey and learn from my experiences, I invite you
-        to follow me on Twitter: https://twitter.com/InfiniteJuliaan
+        to{" "}
+        <Link href="https://twitter.com/InfiniteJuliaan" target="_blank">
+          follow me on Twitter
+        </Link>
+        .
         <br />
         <br />
         If you’d like to get to know my co-founder, David, better and hear more about the Mindflow
-        journey, check out this interview I did with him on my podcast:
-        (https://www.youtube.com/watch?v=kqhTV7vI-ww)
+        journey,{" "}
+        <Link href="https://www.youtube.com/watch?v=kqhTV7vI-ww" target="_blank">
+          check out this interview I did with him on my podcast
+        </Link>
+        .
         <br />
         <br />
         Feel free to reach out if you’d like to learn more about Mindflow or have any thoughts on
@@ -300,10 +334,11 @@ const Mindflow = () => (
       <br />
 
       <Image
-        src="images/ITFCover.jpg"
-        alt="David and Julian"
+        src="images/MindflowLogo.jpg"
+        alt="The Mindflow Logo"
         margin="0 auto"
         mb="30px"
+        width={["100%", "40%", "40%"]}
         borderRadius="12px"
       />
     </article>
