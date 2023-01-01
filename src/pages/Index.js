@@ -1,17 +1,6 @@
 import React from "react";
 import { Link as InternalLink } from "react-router-dom";
-import {
-  Text,
-  Heading,
-  Image,
-  // Link,
-  OrderedList,
-  ListItem,
-  HStack,
-  Box,
-  Input,
-  Button,
-} from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import Main from "../layouts/Main";
 
 const Index = () => (
@@ -32,7 +21,8 @@ const Index = () => (
         <br />
         <b>A Brief Overview</b>
         <br />
-        {"    "}💥 I am a Co-Founder and the CEO at Mindflow.
+        {"    "}💥 I am a Co-Founder and the CEO at{" "}
+        <InternalLink to="/mindflow">Mindflow</InternalLink>.
         <br />
         💥 I am also the Host of the{" "}
         <InternalLink to="/podcast">Inventing The Future Podcast</InternalLink>.
@@ -49,6 +39,10 @@ const Index = () => (
         mistake I have made in my life <InternalLink to="/story">here</InternalLink> or check out
         the <InternalLink to="/about">about page</InternalLink>, which outlines a bit of my history,
         interests, and dreams.
+        <br />
+        <br />
+        You can also learn more about my startup Mindflow,{" "}
+        <InternalLink to="/mindflow">here</InternalLink>.
       </Text>
     </article>
   </Main>

@@ -18,7 +18,8 @@ const Contact = () => (
         <p>
           Feel free to get in touch. You can email me at:{" "}
           <a href="mailto:infinite@julian.ai">infinite@julian.ai</a> or reach out to me on any of
-          the social platforms.
+          the social platforms. I'm especially active on Twitter, where I share growth and wisdom
+          gathered from my journey as a founder.
         </p>
       </div>
       <ContactIcons />

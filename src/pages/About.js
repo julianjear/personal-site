@@ -17,7 +17,7 @@ const count = markdown
 const LinkRenderer = ({ ...children }) => <Link {...children} />;
 
 const About = () => (
-  <Main title="About" description="Learn about Julian Alvarez">
+  <Main title="About" description="Learn about Julian Alvarez ">
     <article className="post markdown" id="about">
       <header>
         <div className="title">

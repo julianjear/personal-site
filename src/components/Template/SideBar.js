@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as InternalLink } from "react-router-dom";
 
 import ContactIcons from "../Contact/ContactIcons";
 
@@ -8,9 +8,9 @@ const { PUBLIC_URL } = process.env; // set automatically from package.json:homep
 const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
-      <Link to="/" className="logo">
+      <InternalLink to="/" className="logo">
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
-      </Link>
+      </InternalLink>
       <header>
         <h2>Julian Alvarez</h2>
         <p>
@@ -23,17 +23,17 @@ const SideBar = () => (
       <h2>About</h2>
       <p>
         Hi, I&apos;m Julian. I love building things, learning, and leading others. I am a Co-Founder
-        & the CEO at <a href="https://www.mindflow.gg">Mindflow</a>, and the host of the{" "}
-        <a href="https://www.youtube.com/@inventing.the.future">Inventing The Future Podcast</a>. I
-        am obsessed with the infinite journey of personal growth and love uncovering new ways to
-        continue expanding and manifesting my infinite potential.
+        & the CEO at <InternalLink to="/mindflow">Mindflow</InternalLink>, and the host of the{" "}
+        <InternalLink to="/podcast">Inventing The Future Podcast</InternalLink>. I am obsessed with
+        the infinite journey of personal growth and love uncovering new ways to continue expanding
+        and manifesting my infinite potential.
       </p>
       <br />
       <ul className="actions">
         <li>
-          <Link to="/about" className="button">
-            About Me
-          </Link>
+          <InternalLink to="/story" className="button">
+            My Story
+          </InternalLink>
         </li>
       </ul>
     </section>
@@ -42,7 +42,7 @@ const SideBar = () => (
       <ContactIcons />
       <br />
       <p className="copyright">
-        &copy; Julian Alvarez <Link to="/">julian.ai</Link>.
+        &copy; Julian Alvarez <InternalLink to="/">julian.ai</InternalLink>.
       </p>
     </section>
   </section>
