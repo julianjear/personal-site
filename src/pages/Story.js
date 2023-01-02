@@ -58,10 +58,18 @@ const Story = () => (
         src="images/MedellinWithMe.jpg"
         alt="Photo of Julian in Medellin"
         margin="0 auto"
+        mb="4px"
         borderRadius="12px"
         width={["100%", "70%", "70%"]}
       />
-      <Text mb="30px" textAlign="center" fontSize="14px" color="rgba(117, 117, 117, 1)">
+      <Text
+        margin="0 auto"
+        mb="30px"
+        textAlign="center"
+        fontSize="14px"
+        color="rgba(117, 117, 117, 1)"
+        width={["90%", "60%", "60%"]}
+      >
         Hanging out in the outskirts of Medellin (up in the mountains) or a recent trip during
         Christmas 2022
       </Text>
@@ -69,6 +77,7 @@ const Story = () => (
         src="images/Medellin2.jpg"
         alt="Photo of Medellin"
         margin="0 auto"
+        mb="4px"
         borderRadius="12px"
         width={["100%", "70%", "70%"]}
       />
@@ -132,9 +141,20 @@ const Story = () => (
           src="images/HoldingTonyBook.jpg"
           alt="Julian holding a book of Tony Robbins"
           margin="0 auto"
+          mb="4px"
           borderRadius="12px"
           height={["400px", "500px", "500px"]}
         />
+        <Text
+          margin="0 auto"
+          textAlign="center"
+          fontSize="14px"
+          color="rgba(117, 117, 117, 1)"
+          width={["90%", "45%", "45%"]}
+        >
+          My favorite Tony Robbins book, which succinctly communicates many of his core ideas in 100
+          pages.
+        </Text>
         <br />
         <br />
         This experience taught me that we all have so much more potential than we could ever
@@ -255,6 +275,7 @@ const Story = () => (
           src="images/iCalculator.jpeg"
           alt="A screenshot of iCalculator on the App Store"
           margin="0 auto"
+          mb="4px"
           borderRadius="12px"
           height={["450px", "600px", "600px"]}
         />
@@ -346,6 +367,7 @@ const Story = () => (
           src="images/SilentRetreat.jpg"
           alt="Picture from Julian's Silent Retreat"
           margin="0 auto"
+          mb="4px"
           borderRadius="12px"
           height={["300px", "500px", "500px"]}
         />
@@ -416,6 +438,7 @@ const Story = () => (
           src="images/ANewEarth.jpg"
           alt="Picture of the book A New Earth by Eckhart Tolle"
           margin="0 auto"
+          mb="4px"
           borderRadius="12px"
           height={["300px", "500px", "500px"]}
         />
