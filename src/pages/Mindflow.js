@@ -36,7 +36,7 @@ const Mindflow = () => (
         <br />
         <br />
         <Image
-          src="images/DavidAndMe.jpg"
+          src="/images/DavidAndMe.jpg"
           alt="David and Julian"
           margin="0 auto"
           mb="30px"
@@ -334,7 +334,7 @@ const Mindflow = () => (
       <br />
 
       <Image
-        src="images/MindflowLogo.jpg"
+        src="/images/MindflowLogo.jpg"
         alt="The Mindflow Logo"
         margin="0 auto"
         mb="30px"

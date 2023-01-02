@@ -41,7 +41,7 @@ const Podcast = () => (
         mb="30px"
       >
         <Image
-          src="images/ITFCover.jpg"
+          src="/images/ITFCover.jpg"
           alt="Inventing The Future Cover"
           margin="0 auto"
           mb="30px"

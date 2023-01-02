@@ -12,6 +12,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import Main from "../layouts/Main";
+
 import { Link as InternalLink } from "react-router-dom";
 
 const Story = () => (
@@ -55,7 +56,7 @@ const Story = () => (
       </Text>
       <br />
       <Image
-        src="images/MedellinWithMe.jpg"
+        src="/images/MedellinWithMe.jpg"
         alt="Photo of Julian in Medellin"
         margin="0 auto"
         mb="4px"
@@ -74,7 +75,7 @@ const Story = () => (
         Christmas 2022
       </Text>
       <Image
-        src="images/Medellin2.jpg"
+        src="/images/Medellin2.jpg"
         alt="Photo of Medellin"
         margin="0 auto"
         mb="4px"
@@ -138,7 +139,7 @@ const Story = () => (
         <br />
         <br />
         <Image
-          src="images/HoldingTonyBook.jpg"
+          src="/images/HoldingTonyBook.jpg"
           alt="Julian holding a book of Tony Robbins"
           margin="0 auto"
           mb="4px"
@@ -272,7 +273,7 @@ const Story = () => (
         <br />
         <br />
         <Image
-          src="images/iCalculator.jpeg"
+          src="/images/iCalculator.jpeg"
           alt="A screenshot of iCalculator on the App Store"
           margin="0 auto"
           mb="4px"
@@ -364,7 +365,7 @@ const Story = () => (
         <br />
         <br />
         <Image
-          src="images/SilentRetreat.jpg"
+          src="/images/SilentRetreat.jpg"
           alt="Picture from Julian's Silent Retreat"
           margin="0 auto"
           mb="4px"
@@ -435,7 +436,7 @@ const Story = () => (
         </OrderedList>
         <br />
         <Image
-          src="images/ANewEarth.jpg"
+          src="/images/ANewEarth.jpg"
           alt="Picture of the book A New Earth by Eckhart Tolle"
           margin="0 auto"
           mb="4px"
