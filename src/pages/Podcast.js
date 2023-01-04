@@ -11,7 +11,15 @@ import {
   Input,
   Button,
 } from "@chakra-ui/react";
-import { FaTiktok, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
+import {
+  FaTiktok,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedin,
+  FaSpotify,
+  FaPodcast,
+} from "react-icons/fa";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Main from "../layouts/Main";
 
@@ -48,6 +56,29 @@ const Podcast = () => (
           borderRadius="12px"
         />
       </Link>
+
+      <Heading as="h3" size="md" mb="12px">
+        Listen On...
+      </Heading>
+
+      <HStack mb="30px">
+        <Button
+          as="a"
+          leftIcon={<FaYoutube />}
+          href="https://www.youtube.com/@inventing.the.future"
+          target="_blank"
+        >
+          YouTube
+        </Button>
+
+        <Button as="a" leftIcon={<FaPodcast />} href="https://bit.ly/itf-apple" target="_blank">
+          Apple
+        </Button>
+
+        <Button as="a" leftIcon={<FaSpotify />} href="https://bit.ly/itf-spotify" target="_blank">
+          Spotify
+        </Button>
+      </HStack>
 
       <Heading as="h3" size="md" mb="12px">
         What is it?
@@ -97,28 +128,6 @@ const Podcast = () => (
           you launch something new (product, book, podcast, etc.) the first people that are going to
           check it out and support you is the people in your personal and professional network. A
           podcast is a great way to gain an audience and build credibility.
-        </ListItem>
-      </OrderedList>
-
-      <Heading as="h3" size="md" mb="12px">
-        Where to Listen?
-      </Heading>
-
-      <OrderedList mb="24px">
-        <ListItem>
-          <Link href="https://www.youtube.com/@inventing.the.future" target="_blank">
-            YouTube (high quality video production recorded in a studio)
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://bit.ly/itf-apple" target="_blank">
-            Apple Podcasts
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://bit.ly/itf-spotify" target="_blank">
-            Spotify
-          </Link>
         </ListItem>
       </OrderedList>
 
