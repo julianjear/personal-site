@@ -15,8 +15,8 @@ import { Link as InternalLink } from "react-router-dom";
 import Main from "../layouts/Main";
 
 const Mindflow = () => (
-  <Main description={"Julian's startup, Mindflow"}>
-    <article className="post" id="podcast">
+  <Main description={"The mission and journey of Julian's startup, Mindflow"}>
+    <article className="post" id="mindflow">
       <header>
         <div className="title">
           <h2 data-testid="heading">The Mindflow Story 🌱</h2>

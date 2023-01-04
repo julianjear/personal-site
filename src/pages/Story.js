@@ -16,8 +16,12 @@ import Main from "../layouts/Main";
 import { Link as InternalLink } from "react-router-dom";
 
 const Story = () => (
-  <Main description={"Julian's podcast, Inventing The Future"}>
-    <article className="post" id="podcast">
+  <Main
+    description={
+      "Julian tells two stories from his life 1) the discovery of his purpose and 2) the biggest mistake he's ever made"
+    }
+  >
+    <article className="post" id="story">
       <header>
         <div className="title">
           <h2 data-testid="heading">Story 📖</h2>
