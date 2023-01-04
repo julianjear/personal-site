@@ -175,12 +175,7 @@ const Story = () => (
           <ListItem>
             We can never be perfect, which means there will always be a gap between where you are
             (current state) and your best self (desired state). And where there is space, there is
-            potential for growth. (Wisdom from Simon Sinek) Life is an infinite game. Our lives are
-            finite but life itself is infinite. The game of life will continue with us or without
-            us. This means that there’s no such thing as winning life or being the best human. In an
-            infinite game, the pursuit of becoming better is better than the pursuit of becoming the
-            best. And since the pursuit of becoming better is infinite, our potential for growth is
-            infinite. Check out this video explanation from Simon for a deeper dive.
+            potential for growth.
           </ListItem>
           <ListItem>
             (Wisdom from Simon Sinek) Life is an infinite game. Our lives are finite but life itself
@@ -230,11 +225,15 @@ const Story = () => (
         <br />
         I don’t say this to impress you but rather to impress upon you that it’s likely none of
         these things would have been possible had I not fueled my relentless ambition with a
-        massively transformative purpose.
+        massively transformative purpose that connected my perception of success with the success of
+        all humanity.
         <br />
         <br />
         Currently my purpose has led me to start Mindflow, where our mission is to inspire a
-        generation of life-long doers to take joy in becoming 1% better every day. <br />
+        generation of life-long doers to take joy in becoming 1% better every day. You can learn
+        more about Mindflow and our journey so far <InternalLink to="/mindflow">
+          here
+        </InternalLink>. <br />
         It also led me to start my podcast, Inventing The Future, where our mission is to inspire
         and empower young entrepreneurs to solve the world’s biggest problems. You can learn more
         about my podcast <InternalLink to="/podcast">here</InternalLink>.
@@ -258,8 +257,8 @@ const Story = () => (
         <br />
         <br />
         The idea of building an app fascinated me, especially since I became interested in tech due
-        to video games and because I strongly desired to be rich at that time and thought that this
-        was the perfect opportunity to become a millionaire.
+        to my obsession with video games and because I strongly desired to be rich at that time and
+        thought that this was the perfect opportunity to become a millionaire.
         <br />
         <br />
         After pitching several ideas, we decided to start with something simple so that we could
