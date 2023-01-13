@@ -276,19 +276,11 @@ const Mindflow = () => (
         (reciprocity).
         <br />
         <br />
-        Additionally, we think there is power in creating the space and inviting someone to express
-        gratitude to someone else. Often times we feel grateful but we don’t express it. And feeling
-        gratitude for someone but not expressing it is like wrapping a present and not giving it to
-        someone
+        We tested out SparkinJoy but did not get enough signal so we decided to move past this idea
+        as well.
         <br />
         <br />
-        We launched Sparkin Joy in late Dec 2022 (few days as of this writing) and are currently
-        testing our initial MVP to see how likely people are to keep gratitude chains alive. If more
-        than 25% of chains are still alive after 10 days, we’ll invest further into this idea.
-        Otherwise, we’ll go back to the drawing board and experiment with another idea.
-        <br />
-        <br />
-        You can check out the live MVP of SparkinJoy and write a gratitude letter to someone at
+        You can check out SparkinJoy at
         <Link href="https://sparkinjoy.com" targe="_blank">
           https://sparkinjoy.com
         </Link>
@@ -301,14 +293,33 @@ const Mindflow = () => (
         Closing Thoughts
       </Heading>
       <Text>
-        This is the beauty and challenge of the 0 to 1 journey!
+        Since SparkinJoy did not work out, we are currently back to the drawing board and are
+        exploring other ideas at the moment. We're particularly excited about new opportunities that
+        GPT is enabling with AI. This is the beauty and challenge of the 0 to 1 journey!
         <br />
         <br />
         One of my biggest lessons along this journey has been that it often takes many iterations to
         find product-market fit. This means that it’s important to minimize your burn rate so that
         you can survive long enough to have enough shots on goal until you manage to score. The more
-        you experiment and iterate, the more you learn, and the more likely you are to succeed. In
-        my mind, it’s only a matter of when not if we hit a home run.
+        you experiment and iterate, the more you learn, and the more likely you are to succeed. It's
+        only a matter of time until we hit a home run. You can read more about this particular
+        lesson I learned through{" "}
+        <Link
+          href="https://www.linkedin.com/feed/update/urn:li:activity:7019362364449820672"
+          target="_blank"
+        >
+          this LinkedIn post.
+        </Link>
+        <br />
+        <br />
+        You can read a full post-mortem of the Mindflow social app{" "}
+        <Link
+          href="https://www.notion.so/mindflowgg/Mindflow-Social-App-Post-Mortem-305b22742b8b4882bc9d04842d0e2091"
+          target="_blank"
+        >
+          here
+        </Link>
+        , which contains reflections on the top four mistakes that we made.
         <br />
         <br />
         If you’d like to follow along my startup journey and learn from my experiences, I invite you
@@ -327,8 +338,9 @@ const Mindflow = () => (
         .
         <br />
         <br />
-        Feel free to reach out if you’d like to learn more about Mindflow or have any thoughts on
-        what I shared here: infinite@julian.ai.
+        If you're interested in receiving Mindflow's investor updates, reach out and let me know.
+        I'm also happy to hear your thoughts on answer any questions about Mindflow:
+        infinite@julian.ai.
       </Text>
       <br />
       <br />
