@@ -1,7 +1,18 @@
 import React from "react";
 import { Link as InternalLink } from "react-router-dom";
-import { Text } from "@chakra-ui/react";
 import Main from "../layouts/Main";
+import {
+  Text,
+  Heading,
+  Image,
+  Link,
+  OrderedList,
+  ListItem,
+  HStack,
+  Box,
+  Input,
+  Button,
+} from "@chakra-ui/react";
 
 const Index = () => (
   <Main description={"Julian is a founder, software engineer, and podcaster."}>
@@ -34,14 +45,22 @@ const Index = () => (
         Sachs
       </Text>
       <br />
+      <Image
+        src="/images/ITFCanvas.jpg"
+        alt="Canvas of the Inventing The Future Podcast"
+        margin="0 auto"
+        mb="30px"
+        width={"100%"}
+        borderRadius="12px"
+      />
       <Text>
-        Learn more about me by reading the stories on how I discovered my purpose and the biggest
-        mistake I have made in my life <InternalLink to="/story">here</InternalLink> or check out
-        the <InternalLink to="/about">about page</InternalLink>, which outlines a bit of my history,
-        interests, and dreams.
+        Check out the <InternalLink to="/story">Story page</InternalLink> to read about two defining
+        stories from my life 1) How I discovered my purpose and 2) The biggest mistake I have made
+        in my life.
         <br />
         <br />
         You can also learn more about my startup Mindflow,{" "}
+        <InternalLink to="/mindflow">here</InternalLink>, and my podcast, Inventing The Future,{" "}
         <InternalLink to="/mindflow">here</InternalLink>.
       </Text>
     </article>
