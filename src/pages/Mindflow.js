@@ -27,7 +27,7 @@ const Mindflow = () => (
         I co-founded Mindflow in January 2022. We've pivoted 5 times since we started the company
         and are currently working on Wisdolia, a Chrome extension that uses AI to generate
         flashcards with questions and answers for any article on the web, so that you can better
-        ingrain and engage with the things you are learning. You can check out Wisdolia at
+        ingrain and engage with the things you are learning. You can check out Wisdolia at{" "}
         <Link href="https://wisdolia.com" targe="_blank">
           https://wisdolia.com
         </Link>
