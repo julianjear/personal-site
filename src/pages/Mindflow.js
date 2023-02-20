@@ -24,12 +24,13 @@ const Mindflow = () => (
       </header>
 
       <Text>
-        I co-founded Mindflow in January 2022. Our mission is to inspire a generation of life-long
-        doers to take joy in becoming 1% better every day.
-        <br />
-        <br />
-        This mission directly connects with my massively transformative purpose to empower myself
-        and others to discover and manifest their infinite potential.
+        I co-founded Mindflow in January 2022. We've pivoted 5 times since we started the company
+        and are currently working on Wisdolia, a Chrome extension that uses AI to generate
+        flashcards with questions and answers for any article on the web, so that you can better
+        ingrain and engage with the things you are learning. You can check out Wisdolia at
+        <Link href="https://wisdolia.com" targe="_blank">
+          https://wisdolia.com
+        </Link>
         <br />
         <br />
         I’m grateful to be on this journey with my brilliant co-founder, David Glass.
@@ -43,7 +44,7 @@ const Mindflow = () => (
           width={["100%", "70%", "70%"]}
           borderRadius="12px"
         />
-        Since we started Mindflow, we have tested out 5 different ideas. I’ll tell the story of
+        Since we started Mindflow, we have tested out 6 different ideas. I’ll tell the story of
         Mindflow by giving a brief overview on each of the ideas, why we pivoted, and the lessons we
         gathered from each of them.
         <br />
@@ -256,6 +257,17 @@ const Mindflow = () => (
           check out this thread on Twitter
         </Link>
         .
+        <br />
+        <br />
+        You can check out a full post-mortem with a reflection on the top 4 mistakes we made with
+        the Mindflow app{" "}
+        <Link
+          href="https://mindflowgg.notion.site/Mindflow-Social-App-Post-Mortem-305b22742b8b4882bc9d04842d0e2091"
+          targe="_blank"
+        >
+          here
+        </Link>
+        .
       </Text>
       <br />
       <br />
@@ -264,11 +276,10 @@ const Mindflow = () => (
         Idea #5: Sparkin Joy — Connecting the World Through Gratitude
       </Heading>
       <Text>
-        The first idea we decided to test out after brainstorming a lot of different ideas is called
-        Sparkin Joy. The idea here is that you can write a gratitude letter to someone you care
-        about and when you do so, a “gratitude chain” is created. If you receive a gratitude letter,
-        you have 48 hours to send a gratitude letter to someone new before the chain breaks. The
-        goal is to keep the chain alive for as long as possible.
+        The idea with Sparkin Joy is that you can write a gratitude letter to someone you care about
+        and when you do so, a “gratitude chain” is created. If you receive a gratitude letter, you
+        have 48 hours to send a gratitude letter to someone new before the chain breaks. The goal is
+        to keep the chain alive for as long as possible.
         <br />
         <br />
         The core assumption here is that if you receive a gratitude letter, you’ll feel so grateful
@@ -280,9 +291,32 @@ const Mindflow = () => (
         as well.
         <br />
         <br />
-        You can check out SparkinJoy at
+        You can check out Sparkin Joy at{" "}
         <Link href="https://sparkinjoy.com" targe="_blank">
           https://sparkinjoy.com
+        </Link>
+        .
+      </Text>
+      <br />
+      <br />
+
+      <Heading as="h3" size="md" mb="12px">
+        Idea #6: Wisdolia
+      </Heading>
+      <Text>
+        Wisdolia is a Chrome extension that uses AI to generate flashcards with questions and
+        answers for any article on the web, so that you can better ingrain and engage with the
+        things you are learning.
+        <br />
+        <br />
+        Overall, we’re excited about Wisdolia and the potential of what it could become. David and I
+        are deeply curious people that love to learn so we’ve been having a lot of fun thinking
+        about how we can supercharge people’s learning experience, especially with the help of AI.
+        <br />
+        <br />
+        You can check out Wisdolia at{" "}
+        <Link href="https://wisdolia.com" targe="_blank">
+          https://wisdolia.com
         </Link>
         .
       </Text>
@@ -293,33 +327,22 @@ const Mindflow = () => (
         Closing Thoughts
       </Heading>
       <Text>
-        Since SparkinJoy did not work out, we are currently back to the drawing board and are
-        exploring other ideas at the moment. We're particularly excited about new opportunities that
-        GPT is enabling with AI. This is the beauty and challenge of the 0 to 1 journey!
+        We're currently on pivot #5 and even though it's been a challenging journey with many
+        roadbumps, I'm having more fun and am learning more than I ever have before!
         <br />
         <br />
         One of my biggest lessons along this journey has been that it often takes many iterations to
         find product-market fit. This means that it’s important to minimize your burn rate so that
         you can survive long enough to have enough shots on goal until you manage to score. The more
-        you experiment and iterate, the more you learn, and the more likely you are to succeed. It's
-        only a matter of time until we hit a home run. You can read more about this particular
-        lesson I learned through{" "}
+        you experiment and iterate, the more you learn, and the more likely you are to score when
+        you take a shot on goal. I know it's only a matter of time until we hit a home run. You can
+        read more about this particular lesson I learned through{" "}
         <Link
           href="https://www.linkedin.com/feed/update/urn:li:activity:7019362364449820672"
           target="_blank"
         >
           this LinkedIn post.
         </Link>
-        <br />
-        <br />
-        You can read a full post-mortem of the Mindflow social app{" "}
-        <Link
-          href="https://www.notion.so/mindflowgg/Mindflow-Social-App-Post-Mortem-305b22742b8b4882bc9d04842d0e2091"
-          target="_blank"
-        >
-          here
-        </Link>
-        , which contains reflections on the top four mistakes that we made.
         <br />
         <br />
         If you’d like to follow along my startup journey and learn from my experiences, I invite you
