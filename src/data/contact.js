@@ -9,17 +9,17 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons/faEnvelope";
 
 const data = [
   {
-    link: "https://www.linkedin.com/in/julianalvarez42/",
+    link: "https://www.linkedin.com/in/julianalvarez42",
     label: "LinkedIn",
     icon: faLinkedinIn,
   },
   {
-    link: "https://twitter.com/infinitejuliaan",
+    link: "https://twitter.com/infinitejulian0",
     label: "Twitter",
     icon: faTwitter,
   },
   {
-    link: "https://www.instagram.com/infinitejuliaan/",
+    link: "https://www.instagram.com/infinitejulian0",
     label: "Instagram",
     icon: faInstagram,
   },

@@ -353,7 +353,7 @@ const Wisdolia = () => (
         P.S. Wondering where the name Wisdolia came from? It's a derivative of the word wisdom and
         we think about it as a kingdom of wisdom where anyone that enters the kingdom is granted the
         super power of infinite wisdom. But actually in reality we just wanted a .com domain and
-        needed to invent a new world lol 😂
+        needed to invent a new word lol 😂
       </Text>
       <br />
       <br />
@@ -363,7 +363,7 @@ const Wisdolia = () => (
         alt="The Wisdolia tree"
         margin="0 auto"
         mb="30px"
-        width={["100%", "40%", "40%"]}
+        width={["100%", "70%", "70%"]}
         borderRadius="12px"
       />
     </article>
