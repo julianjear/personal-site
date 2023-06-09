@@ -23,7 +23,7 @@ const SideBar = () => (
       <h2>About</h2>
       <p>
         Hi, I&apos;m Julian. I love building things, learning, and leading others. I am a Co-Founder
-        & the CEO at <InternalLink to="/mindflow">Mindflow</InternalLink>, and the host of the{" "}
+        & the CEO at <InternalLink to="/Wisdolia">Wisdolia</InternalLink>, and the host of the{" "}
         <InternalLink to="/podcast">Inventing The Future Podcast</InternalLink>. I am obsessed with
         the infinite journey of personal growth and love uncovering new ways to continue expanding
         and manifesting my infinite potential.

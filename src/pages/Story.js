@@ -218,7 +218,7 @@ const Story = () => (
         <br />
         <br />
         I have since been to 6 Tony Robbins seminars, consumed countless books and courses on
-        personal growth, co-founded two companies (Mindflow & Vize), started a podcast (Inventing
+        personal growth, co-founded two companies (Wisdolia & Vize), started a podcast (Inventing
         The Future), and worked as a Software Engineer at Meta (Facebook), LinkedIn, and Goldman
         Sachs. I did all of these things in the last 5 years.
         <br />
@@ -229,9 +229,9 @@ const Story = () => (
         all humanity.
         <br />
         <br />
-        Currently my purpose has led me to start Mindflow, where our mission is to inspire a
+        Currently my purpose has led me to start Wisdolia, where our mission is to inspire a
         generation of life-long doers to take joy in becoming 1% better every day. You can learn
-        more about Mindflow and our journey so far <InternalLink to="/mindflow">
+        more about Wisdolia and our journey so far <InternalLink to="/Wisdolia">
           here
         </InternalLink>. <br />
         It also led me to start my podcast, Inventing The Future, where our mission is to inspire
@@ -400,8 +400,8 @@ const Story = () => (
         <br />
         I went back to college, finished my last semester, and then I moved to Palo Alto, California
         when I started working at Meta. I left Vize in January of 2022 when I decided to start
-        Mindflow and after a whopping 9.5 months at Meta, I decided to leave to go all in on
-        Mindflow.
+        Wisdolia and after a whopping 9.5 months at Meta, I decided to leave to go all in on
+        Wisdolia.
         <br />
         <br />I reflected deeply on this experience and learned so many things that continue to have
         a significant impact in my life today. Here are the top three lessons I gained from this

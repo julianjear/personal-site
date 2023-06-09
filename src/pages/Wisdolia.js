@@ -14,20 +14,21 @@ import {
 import { Link as InternalLink } from "react-router-dom";
 import Main from "../layouts/Main";
 
-const Mindflow = () => (
-  <Main description={"The mission and journey of Julian's startup, Mindflow"}>
-    <article className="post" id="mindflow">
+const Wisdolia = () => (
+  <Main description={"The mission and journey of Julian's startup, Wisdolia"}>
+    <article className="post" id="wisdolia">
       <header>
         <div className="title">
-          <h2 data-testid="heading">The Mindflow Story 🌱</h2>
+          <h2 data-testid="heading">The Wisdolia Story 🌱</h2>
         </div>
       </header>
 
       <Text>
-        I co-founded Mindflow in January 2022. We've pivoted 5 times since we started the company
-        and are currently working on Wisdolia, a Chrome extension that uses AI to generate
-        flashcards with questions and answers for any article on the web, so that you can better
-        ingrain and engage with the things you are learning. You can check out Wisdolia at{" "}
+        I co-founded Wisdolia in January 2022. We've pivoted 4 times since we started the company
+        and are currently working on Wisdolia, where we're building an AI learning copilot that
+        turns any study material into an interactive, personalized, and fun learning experience. We
+        started off by creating a Chrome extension that uses AI to generate flashcards with
+        questions and answers for any article, PDF, or YouTube video. You can check out Wisdolia at{" "}
         <Link href="https://wisdolia.com" targe="_blank">
           https://wisdolia.com
         </Link>
@@ -44,19 +45,20 @@ const Mindflow = () => (
           width={["100%", "70%", "70%"]}
           borderRadius="12px"
         />
-        Since we started Mindflow, we have tested out 6 different ideas. I’ll tell the story of
-        Mindflow by giving a brief overview on each of the ideas, why we pivoted, and the lessons we
+        Since we started the company, we have tested out 6 different ideas. I’ll tell the story of
+        Wisdolia by giving a brief overview on each of the ideas, why we pivoted, and the lessons we
         gathered from each of them.
         <br />
         <br />
       </Text>
 
       <Heading as="h3" size="md" mb="12px">
-        Idea #1: Learn-to-Earn — The Genesis of Mindflow
+        Idea #1: Learn-to-Earn — The Genesis of Wisdolia
       </Heading>
       <Text>
-        Mindflow was born out of an idea around a concept named learn-to-earn, which was inspired
-        from the boom of play-to-earn games, such as Axie Infinity.
+        Mindflow was the name of the first idea that gave birth to the company and it was based on a
+        concept named learn-to-earn. Learn-to-earn was inspired from the explosion of play-to-earn
+        games, such as Axie Infinity.
         <br />
         <br />
         In a play to earn game like Axie Infinity, you can buy Axie NFTs and use them to play the
@@ -68,14 +70,15 @@ const Mindflow = () => (
         get.
         <br />
         <br />
-        I was mind blow by the economic opportunity this was creating but hated the fact that they
-        were playing video games. What if we could apply this same concept to something a bit more
-        productive, such as learning? Thus, the idea for learn-to-earn was born.
+        I was mind blow by the economic opportunity this was creating but felt uncomfortable that
+        they were playing a video game, which wasn't helping them in any real way. What if we could
+        apply this same concept to something a bit more productive, such as learning? Thus, the idea
+        for learn-to-earn was born.
         <br />
         <br />
         We launched our MVP for the learn-to-earn platform in March of 2022. The basic idea is that
         you read text from a learning lesson, respond to a reflection question based on what you
-        learned and if we approve your response (based on it not being spam), you will earn 100
+        learned and if we approve your response (based on it not being spam), you would earn 100
         points, which equates to $0.50 worth of the MATIC cryptocurrency.
         <br />
         <br />
@@ -119,8 +122,8 @@ const Mindflow = () => (
           </ListItem>
           <ListItem>
             <b>Action {">"} Consumption:</b> We came to realize that the real growth happens when
-            you take action, not when you consume content. We therefore wanted to build something
-            that had a greater emphasis on taking action.
+            you apply what you learn and take action, not when you mindlessly consume. We therefore
+            wanted to build something that had a greater emphasis on taking action.
           </ListItem>
           <ListItem>
             <b>Low-Income People:</b> The people that resonated with this product the most were
@@ -128,7 +131,7 @@ const Mindflow = () => (
             the problem with serving this demographic is that we are not those people and don’t know
             almost any people that are low-income so there would be a lot of cultural differences
             and pain points that would be easy to miss. We thought it would be better to start by
-            solving problems our own problem or the problems of people we know.
+            solving our own problems or the problems of people we know.
           </ListItem>
         </OrderedList>
       </Text>
@@ -157,16 +160,11 @@ const Mindflow = () => (
         taking action and the most enjoyable parts of the experience.
         <br />
         <br />
-        Therefore, when we decided to dial up the social and convenience factors of the experience
-        by creating a social app that gave users daily quests.
+        Therefore, we decided to dial up the social and convenience factors of the experience by
+        creating a social app that gave users daily quests.
         <br />
         <br />
-        This pivot, just like the last, did not happen because what we were doing was not working
-        but rather because we identified what we believed to be a much bigger and better
-        opportunity.
-        <br />
-        <br />
-        You can check out a demo of how the Mindflow Games works{" "}
+        You can check out a demo of how the Mindflow Games worked{" "}
         <Link href="https://www.loom.com/share/33b003feb3184bd9b6d91dcfdd0497e6" target="_blank">
           here
         </Link>
@@ -182,8 +180,8 @@ const Mindflow = () => (
         Idea #3: Growth Made Social — The Mindflow App
       </Heading>
       <Text>
-        After going into full build mode, we ended up launching the Mindflow app in August 2022. You
-        can check out the app{" "}
+        After going into full build mode, we ended up launching the Mindflow app in August 2022. The
+        Mindflow Social app was our biggest bet yet that spanned 6 months. You can check out the app{" "}
         <Link href="https://apple.co/3QFdPlE" target="_blank">
           here
         </Link>
@@ -211,15 +209,15 @@ const Mindflow = () => (
         Idea #4: Growth Journeys
       </Heading>
       <Text>
-        Growth Journeys is a feature within the Mindflow app that enables you to create a growth
-        journey for anything you want to grow in, such as Running, Weightlifting, Reading, Learning
-        Spanish, etc. The idea is to have a space for you to document your hobbies, track your
-        progress, learning efforts, and mental growth all in one spot and share the journey of
-        becoming better every day with friends.
+        Growth Journeys is a feature within the Mindflow app that enables you to create and share a
+        collection of posts for anything you want to grow in, such as Running, Weightlifting,
+        Reading, Learning Spanish, etc. The idea is to have a space for you to document your
+        passions/hobbies, track your progress, learning efforts, and mental growth all in one spot
+        and share the journey of becoming better every day with friends.
         <br />
         <br />
-        We launched Growth Journeys in Oct 2022 and after 3 months, it still hasn't generated good
-        traction.
+        We launched Growth Journeys in Oct 2022 and after 3 months, it still hadn't generated good
+        traction so we decided to pivot.
       </Text>
       <br />
       <br />
@@ -228,15 +226,15 @@ const Mindflow = () => (
         Mini retrospective on the Mindflow App
       </Heading>
       <Text>
-        We launched Mindflow on August 20th, 2022 (4 months from time of writing) and since then,
-        there has been over over 700 downloads and 500 posts created. Retention is only good (1+
-        month) for a very small percentage of users and almost all users churn after 2 months. And
-        perhaps worst of all for a social app, users were not inviting their friends.
+        We launched Mindflow on August 20th, 2022 and after deciding to pivot 6 months later, there
+        had been ~900 downloads and 500 posts created. Retention was only good (1+ month) for a very
+        small percentage of users and almost all users churned after 2 months. And perhaps worst of
+        all for a social app, users were not inviting their friends.
         <br />
         <br />
         When we talked to users, there are things that they found valuable from the experience but
-        overall, it appears that what we have built is a vitamin rather than a pain killer (our
-        product is a nice to have).
+        overall, it appears that what we had built was a vitamin rather than a pain killer (meaning
+        that our product is a nice to have rather than a must have).
         <br />
         <br />
         There’s a lot of mistakes we have made that led to this result but perhaps one of the
@@ -247,16 +245,7 @@ const Mindflow = () => (
         <br />
         <br />
         As a result, we decided to take a step back and brainstorm different potential directions we
-        could take and ideas we could test out. If you’d like an overview of the creative process
-        behind how my co-founder and I came up with 240 different ideas and narrowed it down to one
-        idea to test out,{" "}
-        <Link
-          href="https://twitter.com/InfiniteJuliaan/status/1602400809987149824?s=20"
-          targe="_blank"
-        >
-          check out this thread on Twitter
-        </Link>
-        .
+        could take and ideas we could test out.
         <br />
         <br />
         You can check out a full post-mortem with a reflection on the top 4 mistakes we made with
@@ -276,10 +265,10 @@ const Mindflow = () => (
         Idea #5: Sparkin Joy — Connecting the World Through Gratitude
       </Heading>
       <Text>
-        The idea with Sparkin Joy is that you can write a gratitude letter to someone you care about
-        and when you do so, a “gratitude chain” is created. If you receive a gratitude letter, you
-        have 48 hours to send a gratitude letter to someone new before the chain breaks. The goal is
-        to keep the chain alive for as long as possible.
+        The idea with Sparkin Joy was that you could write a gratitude letter to someone you care
+        about and when you do so, a “gratitude chain” is created. If you receive a gratitude letter,
+        you have 48 hours to send a gratitude letter to someone new before the chain breaks. The
+        goal is to keep the chain alive for as long as possible.
         <br />
         <br />
         The core assumption here is that if you receive a gratitude letter, you’ll feel so grateful
@@ -287,8 +276,8 @@ const Mindflow = () => (
         (reciprocity).
         <br />
         <br />
-        We tested out SparkinJoy but did not get enough signal so we decided to move past this idea
-        as well.
+        We tested out SparkinJoy but after two weeks, we did not get enough positive signal so we
+        decided to move past this idea as well.
         <br />
         <br />
         You can check out Sparkin Joy at{" "}
@@ -304,14 +293,19 @@ const Mindflow = () => (
         Idea #6: Wisdolia
       </Heading>
       <Text>
-        Wisdolia is a Chrome extension that uses AI to generate flashcards with questions and
-        answers for any article on the web, so that you can better ingrain and engage with the
-        things you are learning.
+        Wisdolia is what we're currently working on and it's finally the first idea that is working
+        really well (10,000s of users)! At Wisdolia, we're building an AI learning copilot that
+        turns any study material into an interactive, personalized, and fun learning experience. We
+        started off by creating a Chrome extension that uses AI to generate flashcards with
+        questions and answers for any article, PDF, or YouTube video. It has proven to be extremely
+        valuable for students because of how much time it saves them from having to create
+        flashcards.
         <br />
         <br />
         Overall, we’re excited about Wisdolia and the potential of what it could become. David and I
-        are deeply curious people that love to learn so we’ve been having a lot of fun thinking
-        about how we can supercharge people’s learning experience, especially with the help of AI.
+        are infinitely curious people that love to learn so we’ve been having a lot of fun thinking
+        about how we can transform any student into a super learner that can retain and understand
+        anything 10x better and faster.
         <br />
         <br />
         You can check out Wisdolia at{" "}
@@ -327,7 +321,7 @@ const Mindflow = () => (
         Closing Thoughts
       </Heading>
       <Text>
-        We're currently on pivot #5 and even though it's been a challenging journey with many
+        We're currently on pivot #4 and even though it's been a challenging journey with many
         roadbumps, I'm having more fun and am learning more than I ever have before!
         <br />
         <br />
@@ -335,8 +329,7 @@ const Mindflow = () => (
         find product-market fit. This means that it’s important to minimize your burn rate so that
         you can survive long enough to have enough shots on goal until you manage to score. The more
         you experiment and iterate, the more you learn, and the more likely you are to score when
-        you take a shot on goal. I know it's only a matter of time until we hit a home run. You can
-        read more about this particular lesson I learned through{" "}
+        you take a shot on goal. You can read more about this particular lesson I learned through{" "}
         <Link
           href="https://www.linkedin.com/feed/update/urn:li:activity:7019362364449820672"
           target="_blank"
@@ -347,30 +340,27 @@ const Mindflow = () => (
         <br />
         If you’d like to follow along my startup journey and learn from my experiences, I invite you
         to{" "}
-        <Link href="https://twitter.com/InfiniteJuliaan" target="_blank">
+        <Link href="https://twitter.com/InfiniteJulian0" target="_blank">
           follow me on Twitter
         </Link>
         .
         <br />
         <br />
-        If you’d like to get to know my co-founder, David, better and hear more about the Mindflow
-        journey,{" "}
-        <Link href="https://www.youtube.com/watch?v=kqhTV7vI-ww" target="_blank">
-          check out this interview I did with him on my podcast
-        </Link>
-        .
-        <br />
-        <br />
-        If you're interested in receiving Mindflow's investor updates, reach out and let me know.
-        I'm also happy to hear your thoughts on answer any questions about Mindflow:
+        Feel free to reach out if you'd like to learn more about any part of our journey:
         infinite@julian.ai.
+        <br />
+        <br />
+        P.S. Wondering where the name Wisdolia came from? It's a derivative of the word wisdom and
+        we think about it as a kingdom of wisdom where anyone that enters the kingdom is granted the
+        super power of infinite wisdom. But actually in reality we just wanted a .com domain and
+        needed to invent a new world lol 😂
       </Text>
       <br />
       <br />
 
       <Image
-        src="/images/MindflowLogo.jpg"
-        alt="The Mindflow Logo"
+        src="/images/WisdoliaHelixTree.png"
+        alt="The Wisdolia tree"
         margin="0 auto"
         mb="30px"
         width={["100%", "40%", "40%"]}
@@ -380,4 +370,4 @@ const Mindflow = () => (
   </Main>
 );
 
-export default Mindflow;
+export default Wisdolia;

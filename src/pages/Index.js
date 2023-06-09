@@ -33,7 +33,7 @@ const Index = () => (
         <b>A Brief Overview</b>
         <br />
         {"    "}💥 I am a Co-Founder and the CEO at{" "}
-        <InternalLink to="/mindflow">Mindflow</InternalLink>.
+        <InternalLink to="/Wisdolia">Wisdolia</InternalLink>.
         <br />
         💥 I am also the Host of the{" "}
         <InternalLink to="/podcast">Inventing The Future Podcast</InternalLink>.
@@ -59,9 +59,9 @@ const Index = () => (
         in my life.
         <br />
         <br />
-        You can also learn more about my startup Mindflow,{" "}
-        <InternalLink to="/mindflow">here</InternalLink>, and my podcast, Inventing The Future,{" "}
-        <InternalLink to="/mindflow">here</InternalLink>.
+        You can also learn more about my startup Wisdolia,{" "}
+        <InternalLink to="/Wisdolia">here</InternalLink>, and my podcast, Inventing The Future,{" "}
+        <InternalLink to="/Wisdolia">here</InternalLink>.
       </Text>
     </article>
   </Main>

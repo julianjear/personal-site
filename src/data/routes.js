@@ -13,8 +13,8 @@ const routes = [
     path: "/about",
   },
   {
-    label: "Mindflow",
-    path: "/mindflow",
+    label: "Wisdolia",
+    path: "/Wisdolia",
   },
   {
     label: "Podcast",

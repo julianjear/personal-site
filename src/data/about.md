@@ -11,7 +11,7 @@ And on the contrary, there is nothing that I fear more than to leave my full pot
 
 ### **Currently**
 
-I am a Co-founder and the CEO at [Mindflow](/mindflow), where our mission is to inspire a generation of life-long doers to take joy in becoming 1% better every day. Currently, we are building a social app centered on personal growth. On Mindflow, you can embark on growth journeys that are meaningful to you, track your progress, and share the journey of becoming better every day with friends.
+I am a Co-founder and the CEO at [Wisdolia](/Wisdolia), where our mission is to inspire a generation of life-long doers to take joy in becoming 1% better every day. Currently, we are building a social app centered on personal growth. On Wisdolia, you can embark on growth journeys that are meaningful to you, track your progress, and share the journey of becoming better every day with friends.
 <br />
 <br />
 I'm also the host of a podcast named [Inventing The Future](https://www.youtube.com/@inventing.the.future), where I interview visionary tech entrepreneurs that are solving the world's biggest problems. Every episode features the story of the guest, what they're building, and the mindsets, tools, & habits that enable them to thrive.
@@ -41,8 +41,8 @@ I'm also the host of a podcast named [Inventing The Future](https://www.youtube.
 - At 20, I became a co-founder of [Vize](https://incentivizinggood.com/), a startup with a mission to give low-skilled workers in developing countries a voice by allowing them to anonymously share their work experiences with their community.
 - At 22, I went on a silent retreat, where I experimented what would happen to The Mind when it became deprived of human interaction and technology for 5 days. You can listen to the reflection of my experience [here](https://infinitemindspodcast.com/2020/04/30/2-silent-retreat-reflection-the-infinite-journey-of-discovering-your-true-self/) .
 - At 23, I completed internships with LinkedIn and Facebook as a Software Engineer and decided to accept Facebook's offer. I also graduated from Texas A&M University with a degree in computer science and survived COVID!
-- At 24, I fulfilled my dream of living in Silicon Valley when I moved to Palo Alto, California to start my full-time job at Meta (Facebook). I also started Mindflow in January 2022 and decided to leave my previous startup, Vize, to focus on Mindflow.
-- At 25, I decided to leave Meta after 9.5 months to go all in on Mindflow. I loved my job at Meta but in the end, Mindflow became an obsession and I felt that I was ready to be a full time founder.
+- At 24, I fulfilled my dream of living in Silicon Valley when I moved to Palo Alto, California to start my full-time job at Meta (Facebook). I also started Wisdolia in January 2022 and decided to leave my previous startup, Vize, to focus on Wisdolia.
+- At 25, I decided to leave Meta after 9.5 months to go all in on Wisdolia. I loved my job at Meta but in the end, Wisdolia became an obsession and I felt that I was ready to be a full time founder.
   <br />
   <br />
 
