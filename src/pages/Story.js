@@ -229,11 +229,9 @@ const Story = () => (
         all humanity.
         <br />
         <br />
-        Currently my purpose has led me to start Wisdolia, where our mission is to inspire a
-        generation of life-long doers to take joy in becoming 1% better every day. You can learn
-        more about Wisdolia and our journey so far <InternalLink to="/Wisdolia">
-          here
-        </InternalLink>. <br />
+        Currently my purpose has led me to start Wisdolia, where we are on a mission to transform
+        anyone into a super learner who can retain and understand anything 10x better and faster.
+        You can learn more about Wisdolia <InternalLink to="/Wisdolia">here</InternalLink>. <br />
         It also led me to start my podcast, Inventing The Future, where our mission is to inspire
         and empower young entrepreneurs to solve the world’s biggest problems. You can learn more
         about my podcast <InternalLink to="/podcast">here</InternalLink>.
@@ -262,9 +260,9 @@ const Story = () => (
         <br />
         <br />
         After pitching several ideas, we decided to start with something simple so that we could
-        both learn: building a calculator for the iPad, which for some reason, to this day, does not
-        come with a calculator. We worked on the calculator and slowly over time the gibberish
-        looking lines of code started to make a little more sense.
+        both learn: building a calculator for the iPad, which for some reason, to this day, the iPad
+        does not come with a calculator. We worked on the calculator and slowly over time the
+        gibberish looking lines of code started to make a little more sense.
         <br />
         <br />
         After releasing the calculator, we did not become millionaires, but we did manage to get
@@ -288,8 +286,8 @@ const Story = () => (
         </Text>
         <br />
         <br />
-        I ended up developing a couple of other apps during high school and decided to study
-        computer science at Texas A&M University.
+        I ended up developing a couple of other apps during high school and experiencing the super
+        power of being able to code inspired me to study computer science at Texas A&M University.
         <br />
         <br />
         During college, I co-founded a startup named Vize and took on the role of being the CTO,
@@ -311,11 +309,11 @@ const Story = () => (
         than yourself).
         <br />
         <br />
-        As a result, I made the unethical decision to hire freelancers to do some of my homework the
-        last two semesters of college so that I could buy myself some time. Everything was going
-        smoothly until I received an email from the Honor System Office on the day of my last final
-        of my last semester (two weeks from graduation). They told me they wanted to speak with me
-        🧐
+        As a result, during my last two semesters of college, I made the unethical decision to hire
+        freelancers to do some of my homework so that I could buy myself some time. Everything was
+        going smoothly until I received an email from the Honor System Office on the day of my last
+        final of my last semester (two weeks from graduation). They told me they wanted to speak
+        with me 🧐
         <br />
         <br />
         It turned out that one of the freelancers that saw my job post reported it to my university.
@@ -349,7 +347,7 @@ const Story = () => (
         thought I was wasting my time with the startup since it hadn’t amounted to anything.
         <br />
         <br />
-        This was by far the toughest period in my life but I also knew that tough times create
+        This was by far the toughest period on my life but I also knew that tough times create
         incredible growth opportunities. This was also the perfect opportunity to put all the
         personal growth from Tony Robbins’ seminars into practice.
         <br />
