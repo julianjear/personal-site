@@ -363,7 +363,7 @@ const Wisdolia = () => (
         src="/images/WisdoliaHelixTree.png"
         alt="The Wisdolia tree"
         margin="0 auto"
-        mb="30px"
+        mb="31px"
         width={["100%", "70%", "70%"]}
         borderRadius="12px"
       />
