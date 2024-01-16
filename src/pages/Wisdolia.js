@@ -25,10 +25,10 @@ const Wisdolia = () => (
 
       <Text>
         I co-founded Wisdolia in January 2022. We've pivoted 4 times since we started the company
-        and are currently working on Wisdolia, where we're building an AI learning copilot that
-        turns any study material into an interactive, personalized, and fun learning experience. We
-        started off by creating a Chrome extension that uses AI to generate flashcards with
-        questions and answers for any article, PDF, or YouTube video. You can check out Wisdolia at{" "}
+        and have finally found significant traction in building an app that uses AI to generate
+        smart flashcards from any piece of content. The key idea here is that we are turning any
+        study material into an interactive, personalized, and fun learning experience. You can check
+        out Wisdolia at{" "}
         <Link href="https://wisdolia.com" targe="_blank">
           https://wisdolia.com
         </Link>
@@ -294,12 +294,13 @@ const Wisdolia = () => (
       </Heading>
       <Text>
         Wisdolia is what we're currently working on and it's finally the first idea that is working
-        really well (10,000s of users)! At Wisdolia, we're building an AI learning copilot that
+        really well (100,000s of users)! At Wisdolia, we're building an AI learning copilot that
         turns any study material into an interactive, personalized, and fun learning experience. We
-        started off by creating a Chrome extension that uses AI to generate flashcards with
-        questions and answers for any article, PDF, or YouTube video. It has proven to be extremely
-        valuable for students because of how much time it saves them from having to create
-        flashcards.
+        started off by creating a site that uses AI to generate smart flashcards from any piece of
+        content (articles, PDFs, or YouTube videos). It has proven to be extremely valuable for
+        students because of how much time it saves them from having to create flashcards. You can
+        also answer the generated questions to get immediate feedback on what you got right or wrong
+        in your response, thus enabling deeper understanding quicker.
         <br />
         <br />
         Overall, we’re excited about Wisdolia and the potential of what it could become. David and I
@@ -321,8 +322,8 @@ const Wisdolia = () => (
         Closing Thoughts
       </Heading>
       <Text>
-        We're currently on pivot #4 and even though it's been a challenging journey with many
-        roadbumps, I'm having more fun and am learning more than I ever have before!
+        Even though it's been a challenging journey with many roadbumps, I'm having more fun and am
+        learning more than I ever have before!
         <br />
         <br />
         One of my biggest lessons along this journey has been that it often takes many iterations to

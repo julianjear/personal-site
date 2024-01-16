@@ -56,7 +56,7 @@ const Story = () => (
         We moved to McAllen, Texas, a small city in the southern tip of Texas (20 min from the
         border to Mexico). This is the city where I grew up until I went to college at Texas A&M
         University and studied computer science there. <br />
-        <br />I am now living in Palo Alto, California (Silicon Valley).
+        <br />I am now living in San Francisco, California.
       </Text>
       <br />
       <Image
@@ -75,8 +75,7 @@ const Story = () => (
         color="rgba(117, 117, 117, 1)"
         width={["90%", "60%", "60%"]}
       >
-        Hanging out in the outskirts of Medellin (up in the mountains) or a recent trip during
-        Christmas 2022
+        Hanging out in the outskirts of Medellin (up in the mountains) during Christmas 2022
       </Text>
       <Image
         src="/images/Medellin2.jpg"
@@ -129,17 +128,22 @@ const Story = () => (
         <Link href="https://www.upwnow.com" targe="_blank">
           Unleash The Power Within.
         </Link>{" "}
-        I absorbed Tony’s wisdom on life like a sponge and felt that someone had finally given me a
-        map for how to navigate my life and equipped me with the mindsets needed to manifest my
-        potential and navigate challenging times. I grew exponentially during the seminar but the
-        most profound breakthrough was that I discovered a purpose that extends far beyond myself.
+        I absorbed Tony’s wisdom on life like a sponge and felt that I had been equipped with the
+        mindsets needed to break through the bullshit limiting beliefs that had been holding me back
+        for so long.
+        <br />
+        <br />
+        But the most profound breakthrough was that I discovered a Massive Transformative Purpose.
         <br />
         <br />
         After the seminar, everything changed: I started reading a lot more, I started to journal, I
         stopped playing video games, I became extremely health conscious, and I worked harder than
-        ever before. For the first time in my life, I finally felt aligned with the ambition that I
-        had felt for so long. I had awakened the Titan within me and broken the chains that were
-        holding him back.
+        ever before.
+        <br />
+        <br />
+        For the first time in my life, I finally felt aligned with the ambition that I had felt for
+        so long. I had awakened the Titan within me and broken the chains that were holding him
+        back.
         <br />
         <br />
         <Image
@@ -162,15 +166,22 @@ const Story = () => (
         </Text>
         <br />
         <br />
-        This experience taught me that we all have so much more potential than we could ever
-        possibly imagine and that our potential is infinite. Here are a couple of different
-        explanations for why I believe this… <br />
+        Experiencing such a radical transformation made me wonder where the hell all of this
+        potential I had discovered came from. How could it be that I had no idea that all of this
+        potential was buried somewhere deep within myself?
+        <br />
+        <br />
+        I now believe that we all have an infinite potential for growth and here are a couple of
+        different explanations for why I believe this… <br />
         <OrderedList ml="30px">
           <ListItem>
-            The more of our potential we manifest (the more we grow)→ the more capable we become +
-            the more confident we become → the more opportunities that are given to us + the greater
-            the magnitude of the challenges we want to take on→ this creates space for our potential
-            and growth to further expand. This is a never ending cycle.
+            1) The more of our potential we manifest (the more we grow)→ the more capable and
+            confident we become <br />
+            2) As we become more capable and valuable, we will have more opportunities. And with
+            greater confidence, we'll be more open to tackle greater challenges. <br />
+            3) Challenges create space for us to grow and for our potential to expand, which means
+            that the bigger challenges that we take on, the more we will grow. <br />
+            4) This is a never ending cycle.
           </ListItem>
           <ListItem>
             We can never be perfect, which means there will always be a gap between where you are
@@ -192,9 +203,10 @@ const Story = () => (
         </OrderedList>
         <br />
         This claim on infinite potential can be disputed but I also like to think about this as more
-        of a mindset. It doesn’t matter whether it’s true or not but whether you believe that it is
-        true or not does matter. An Infinite Mindset is an incredibly potent catalyst for growth.
-        Equip yourself with an Infinite Mindset.
+        of a mindset. Just like with any belief, believing that something is true has a much massive
+        impact on your psychology, regardless of whether the belief is true or not. An Infinite
+        Mindset is an incredibly potent catalyst for growth. Equip yourself with an Infinite
+        Mindset.
         <br />
         <br />
         This understanding on potential revealed two critical and opposing personal truths.
@@ -209,24 +221,16 @@ const Story = () => (
           </ListItem>
         </OrderedList>
         <br />
-        After realizing that every person has a boundless potential and that no one is completely
-        aware of the full nature of their potential (not even me), I became obsessed with figuring
-        out how how I could empower myself and others to discover and manifest their infinite
-        potential. And when I think about potential, I like to group it into the four buckets of
-        becoming, achieving, creating, and giving. This is what I articulate my purpose in life to
-        be.
+        After realizing that every person has boundless potential and that no one is truly aware of
+        the full nature of their potential (not even me), I became obsessed with figuring out how
+        how I could empower myself and others to discover and fulfill their infinite potential.
         <br />
         <br />
         I have since been to 6 Tony Robbins seminars, consumed countless books and courses on
         personal growth, co-founded two companies (Wisdolia & Vize), started a podcast (Inventing
-        The Future), and worked as a Software Engineer at Meta (Facebook), LinkedIn, and Goldman
-        Sachs. I did all of these things in the last 5 years.
-        <br />
-        <br />
-        I don’t say this to impress you but rather to impress upon you that it’s likely none of
-        these things would have been possible had I not fueled my relentless ambition with a
-        massively transformative purpose that connected my perception of success with the success of
-        all humanity.
+        The Future), and worked as a Software Engineer at Meta (on the learning team), LinkedIn
+        Learning, and Goldman Sachs. I did all of these things within 5 years of attending my first
+        Tony Robbins seminar.
         <br />
         <br />
         Currently my purpose has led me to start Wisdolia, where we are on a mission to transform
@@ -246,7 +250,7 @@ const Story = () => (
         <br />
         <br />
         McAllen, Texas is a small city with little to no presence in tech/startups. It was therefore
-        a miracle that one of my Dad’s friends, Juan Carlos, happened to be a computer scientist.
+        a miracle that one of my Dad’s friends, Juan Carlos, happened to be a software engineer.
         <br />
         <br />
         It was 2010 and the iPhone was starting to take the world by storm. Juan Carlos came up to
@@ -267,10 +271,10 @@ const Story = () => (
         <br />
         After releasing the calculator, we did not become millionaires, but we did manage to get
         over 30,000 downloads. This experience had a profound impact on me because I got to
-        experience the process identifying a problem/need, coming up with a solution to address the
-        problem, building the tech with code, and publishing it on a platform that instantly made it
-        available to millions of people around the world. This experience taught me that programming
-        isn’t just a tool, it’s a platform for enacting meaningful change.
+        experience the process of identifying a problem/need, brainstorming ideas to address the
+        problem, building the technical solution, and publishing it on a platform that instantly
+        made it available to millions of people around the world. This experience taught me that
+        programming isn’t just a tool, it’s a platform for enacting meaningful change.
         <br />
         <br />
         <Image
@@ -286,18 +290,19 @@ const Story = () => (
         </Text>
         <br />
         <br />
-        I ended up developing a couple of other apps during high school and experiencing the super
-        power of being able to code inspired me to study computer science at Texas A&M University.
+        I ended up developing a couple of other apps during high school and after experiencing the
+        super power of being able to code, I decided to study computer science at Texas A&M
+        University.
         <br />
         <br />
         During college, I co-founded a startup named Vize and took on the role of being the CTO,
-        where I led 5 other engineers. Vize is a Glassdoor for factory workers in Mexico, with the
+        where I led 5 other engineers. Vize was a Glassdoor for factory workers in Mexico, with the
         aim of improving the working conditions for low-income workers and lowering insanely high
         turnover rates for factories (important context for later).
         <br />
         <br />
         My junior year of college, I went hard preparing for technical interviews so that I could
-        land a great internship as a Software Engineer. After many rejections, I finally managed to
+        land a great internship as a software engineer. After many rejections, I finally managed to
         get an offer from Goldman Sachs. I spent the summer in NYC, loved the experience, and
         decided to accept the full time offer I was given.
         <br />
@@ -309,21 +314,18 @@ const Story = () => (
         than yourself).
         <br />
         <br />
-        As a result, during my last two semesters of college, I made the unethical decision to hire
-        freelancers to do some of my homework so that I could buy myself some time. Everything was
-        going smoothly until I received an email from the Honor System Office on the day of my last
-        final of my last semester (two weeks from graduation). They told me they wanted to speak
-        with me 🧐
+        Everything was fine until I received an email from the Honor System Office on the day of my
+        last final for my last semester of college (two weeks from graduation). They told me they
+        wanted to speak with me 🧐
         <br />
         <br />
         It turned out that one of the freelancers that saw my job post reported it to my university.
-        And I was smart enough to do two things 1) keep the name of the university on the assignment
-        2) use the same Upwork account with my real name that I had previously used for an eBay
-        business I used to run. As a result, there was no way to get out of it, the evidence was far
-        too compelling.
+        The Upwork account was linked to me because I 1) kept the name of the university on the
+        assignment and 2) used the same Upwork account with my real name that I had previously used
+        for an eBay business I used to run.
         <br />
         <br />
-        I confessed to the cheating and after having a hearing with the university where they would
+        I confessed to cheating and after having a hearing with the university where they would
         decide my fate, I got suspended for a year and was given Fs in 6 classes, which dropped my
         GPA from a 3.9 to a 2.8.
         <br />
@@ -334,28 +336,63 @@ const Story = () => (
         PhDs and my mom is a professor at a University. In short, it was not a fun time.
         <br />
         <br />
-        Then I ended up telling Goldman Sachs what happened and after two excruciating weeks of
-        waiting to hear what their decision would be, they decided to rescind (retract) my full time
-        offer.
+        Then I ended up telling Goldman Sachs what happened and they said that they would need to
+        think about what they would do about the situation. After two excruciating weeks of waiting
+        to hear what their decision would be, they decided to rescind (retract) my full time offer.
         <br />
         <br />
-        I ended up having to move back home with my parents and experience the full force of their
-        furry every day. I felt like the only thing I had left was my startup, Vize. Yet at that
-        time, things weren’t going well at all. We had been working on the startup for nearly two
-        years and had gotten close to no results. We had just lost two of our best engineers and the
-        others on the team weren’t investing much time into the startup. On top of that, my parents
-        thought I was wasting my time with the startup since it hadn’t amounted to anything.
+        I ended up having to move back home with my parents and experience the delight of their
+        frustration with me. Even though moving back with my parents was initially tough because of
+        the circumstances, it turned out to be an incredibly formative experience to go back and
+        live with them for a year.
+        <br />
+        <br />
+        But at the moment that I went back to live with my parents, I felt like the only thing I had
+        left was my startup, Vize. Yet at that time, things weren’t going well at all.
+        <br />
+        <br />
+        We had been working on the startup for nearly two years and had gotten close to no results.
+        We had just lost two of our best engineers and the others on the team weren’t investing much
+        time into the startup. On top of that, my parents thought I was wasting my time with the
+        startup since it hadn’t amounted to anything.
         <br />
         <br />
         This was by far the toughest period on my life but I also knew that tough times create
         incredible growth opportunities. This was also the perfect opportunity to put all the
         personal growth from Tony Robbins’ seminars into practice.
         <br />
-        <br />I did a 5 day silent retreat the day after my university decided to suspend me and
-        dove deep into my psyche, uncovering blind spots, reflecting on integrity and other values,
-        questioning why I did why I did, and how I could prevent something like this from happening
-        again in the future. If you'd like to hear more about my experiences and reflection from my
-        silent retreat, you can check out{" "}
+        <br />
+        The major mindset shift happened when I realized that if I had to go back to school, this
+        would mean that I would have the opportunity to do more internships. Goldman Sachs was a
+        great job but I knew I could do much better if I set my mind to it.
+        <br />
+        <br />
+        After 4 months of coding like a maniac and 38 interviews with 19 companies, I ended up
+        getting offers from Meta (Facebook), LinkedIn, Google, and another company as a Software
+        Engineer. I decided to accept Meta and LinkedIn’s offer and did two back to back
+        internships. Both of these experiences were incredible and after receiving full time offers
+        from both, I decided to accept Meta’s offer.
+        <br />
+        <br />
+        I went back to college, finished my last semester, and then I moved to Palo Alto, California
+        when I started working at Meta.
+        <br />
+        <br />I left Vize in January of 2022 when I decided to start Wisdolia and after a whopping
+        9.5 months at Meta, I decided to leave to go all in on Wisdolia.
+      </Text>
+      <br />
+      <br />
+      <Heading as="h3" size="md" mb="12px">
+        Reflections on my mistake
+      </Heading>
+      <Text>
+        I went on a 5 day silent retreat the day after my university decided to suspend me and dove
+        deep into my psyche to uncover blind spots and went deep into questioning why I did why I
+        did, and how I could prevent something like this from happening again in the future.
+        <br />
+        <br />
+        Below are some of the lessons from my reflections on the silent retreat. If you’re curious
+        about what it’s like to do a silent retreat and what you can gain from it, you can check out{" "}
         <Link
           href="https://open.spotify.com/episode/2MtGgijDIPydjdfLZIsT8m?si=bce3a15845ae4650"
           target="_blank"
@@ -385,25 +422,8 @@ const Story = () => (
           myself. I wrote day and night and learned a ton about who I am.
         </Text>
         <br />
-        The major mindset shift happened when I realized that if I had to go back to school, this
-        would mean that I would have the opportunity to do more internships.
         <br />
-        <br />
-        After 4 months of coding like a maniac and 38 interviews with 19 companies, I ended up
-        getting offers from Meta (Facebook), LinkedIn, Google, and another company as a Software
-        Engineer. I decided to accept Meta and LinkedIn’s offer and did two back to back
-        internships. Both of these experiences were incredible and after receiving full time offers
-        from both, I decided to accept Meta’s offer.
-        <br />
-        <br />
-        I went back to college, finished my last semester, and then I moved to Palo Alto, California
-        when I started working at Meta. I left Vize in January of 2022 when I decided to start
-        Wisdolia and after a whopping 9.5 months at Meta, I decided to leave to go all in on
-        Wisdolia.
-        <br />
-        <br />I reflected deeply on this experience and learned so many things that continue to have
-        a significant impact in my life today. Here are the top three lessons I gained from this
-        experience...
+        Here are the top three lessons I gained from reflecting on my ethical blunder...
         <OrderedList ml="30px">
           <ListItem>
             <b>
@@ -423,16 +443,17 @@ const Story = () => (
             stupid shit. We’re going to get knocked down on our ass repeatedly. However, failure is
             not defined by getting knocked down. In my mind, failure happens when you fail to take
             the opportunity to reflect and learn from your mistakes and the things that went wrong.
-            When we get a 50 on a test, it’s common to be so frustrated by the results that the last
-            thing we want to do is look at what we did wrong. However, the biggest the mistake, the
-            greater the opportunity for growth will be.
+            When you get a 50 on a test, it’s common to be so frustrated by the results that the
+            last thing you want to do is look at what you did wrong. However, mistakes and failures
+            become gifts once you realize that they are learning opportunities in disguise.
           </ListItem>
           <ListItem>
             <b>Most barriers in life are psychological, not technical.</b> I could have easily spent
             a lot of time feeling sorry for myself and even fallen into depression but I realized
             that even though I had lost control of the path I wanted to go on, I had all the power
             in the world to turn this new path I was now on into a golden path. With the right
-            mindset, anything is possible. In fact, impossible is an opinion.
+            mindset, anything is possible. With the right mindset, impossible is an opinion.
+            Limitations are perceptions.
           </ListItem>
         </OrderedList>
         <br />
