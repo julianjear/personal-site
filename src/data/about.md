@@ -1,4 +1,4 @@
-### **Purpose**
+## **Purpose**
 
 I believe that every one of us has a potential of such an extreme magnitude, that we are all unaware of what we are truly capable of. I live every day with the purpose and relentless determination to empower myself and others to discover and manifest their infinite potential.
 <br />
@@ -9,26 +9,25 @@ And on the contrary, there is nothing that I fear more than to leave my full pot
 <br />
 <br />
 
-### **Currently**
+## **Currently**
 
-I am a Co-founder and the CEO at [Wisdolia](/Wisdolia), where we are on a mission to transform anyone into a super learner who can retain and understand anything 10x better and faster. To do this, we're building an AI learning copilot that turns any study material / content into an interactive, personalized, and fun learning experience. We
-started off by creating a Chrome extension that uses AI to generate flashcards with
-questions and answers for any article, PDF, or YouTube video. Check out and play around with Wisdolia [here](https://wisdolia.com).
-<br />
-<br />
-I'm also the host of a podcast named [Inventing The Future](https://www.youtube.com/@inventing.the.future), where I interview visionary tech entrepreneurs that are solving the world's biggest problems. Every episode features the story of the guest, what they're building, and the mindsets, tools, & habits that enable them to thrive.
+I am a Co-founder and the CEO at [Jungle](/Jungle), where we are on a mission to transform anyone into a super learner who can retain and understand anything 10x better and faster. Check out and play around with Jungle [here](https://jungleai.com).
 <br />
 <br />
 
-### **Previously**
+<br />
+<br />
 
-- I was the Co-founder & CTO at Vize, which is a Glassdoor for factory workers in Mexico. The main goal here was to improve working conditions for factory workers and to lower the insanely high turnover rates that factories experienced (turnover as high as 90-400% of their workforce every year).
+## **Previously**
+
 - I was a Software Engineer at Meta (Facebook), LinkedIn, and Goldman Sachs. At LinkedIn, I was on the LinkedIn Learning team and at Meta, I was on three different teams: 1) The Social Learning team (building a learning platform on the Facebook app), 2) The Recruiting Diversity team (increasing the number of diverse candidates that we bring into the recruiting pipeline and leveling the playing field for them), 3) The health team (Health communites & COVID hub).
+- I was the Co-founder & CTO at Vize, which is a Glassdoor for factory workers in Mexico. The main goal here was to improve working conditions for factory workers and to lower the insanely high turnover rates that factories experienced (turnover as high as 90-400% of their workforce every year).
+- I was the host of a podcast named [Inventing The Future](https://www.youtube.com/@inventing.the.future), where I interview visionary tech entrepreneurs that are solving the world's biggest problems. Every episode features the story of the guest, what they're building, and the mindsets, tools, & habits that enable them to thrive.
 - You can find more details on each of this and other professional experiences I have had on [my LinkedIn](https://www.linkedin.com/in/julianalvarez42).
   <br />
   <br />
 
-### **Some history**
+## **Some history**
 
 - Born in San Antonio, Texas.
 - Moved to [Medellín, Colombia](https://cdn.kimkim.com/files/a/content_articles/featured_photos/1ad949c863a201daf8589433b4b4f53dcea9bacb/big-2c865b81ba2b66d13bb814a304041332.jpg) 1 month after I was born. I lived there for 4 years.
@@ -44,19 +43,19 @@ I'm also the host of a podcast named [Inventing The Future](https://www.youtube.
 - At 20, I became a co-founder and the CTO at [Vize](https://incentivizinggood.com/), a Glassdoor for low-income workers, where we aimed to improve the working conditions for factory workers and lower turnover rates for factories.
 - At 22, I went on a silent retreat, where I experimented what would happen to The Mind when it became deprived of human interaction and technology for 5 days. You can listen to the reflection of my experience [here](https://infinitemindspodcast.com/2020/04/30/2-silent-retreat-reflection-the-infinite-journey-of-discovering-your-true-self/) .
 - At 23, I completed internships with LinkedIn and Facebook as a Software Engineer and decided to accept Facebook's offer. I also graduated from Texas A&M University with a degree in computer science and survived COVID!
-- At 24, I fulfilled my dream of living in Silicon Valley when I moved to Palo Alto, California to start my full-time job at Meta (Facebook). I also started Wisdolia in January 2022 and decided to leave my previous startup, Vize, to focus on Wisdolia.
-- At 25, I decided to leave Meta after 9.5 months to go all in on [Wisdolia](/wisdolia). I loved my job at Meta but in the end, Wisdolia became an obsession and I felt that I was ready to become a full time founder.
+- At 24, I fulfilled my dream of living in Silicon Valley when I moved to Palo Alto, California to start my full-time job at Meta (Facebook). I also started Jungle in January 2022 and decided to leave my previous startup, Vize, to focus on Jungle.
+- At 25, I decided to leave Meta after 9.5 months to go all in on [Jungle](/Jungle). I loved my job at Meta but in the end, Jungle became an obsession and I felt that I was ready to become a full time founder.
   <br />
   <br />
 
-### **I enjoy**
+## **I enjoy**
 
 - **Sports:** Soccer, Tennis, Snowboarding, Ping Pong
 - **Professional Interests:** Entrepreneurship/Startups, Content Creation, Productivity, Product Management, Leading Others, Exponential Technologies (AI, Web 3, VR/AR, 3D Printing, etc.), Systems Thinking / Creating Systems, Programming, Building a Second Brain, The Future of Education & Learning
-- **Mentors:** Tony Robbins, Peter Diamandis, Elon Musk, August Bradley, Tim Ferriss, Keith Ferrazzi, Jim Kwik, Wim Hof, Naval Ravikant, Tom Bilyeu, Jordan Peterson, Simon Sinek, David Goggins, Shawn Stevenson, and many more.
+- **Mentors:** Tony Robbins, Peter Diamandis, Paul Graham, Elon Musk, August Bradley, Tim Ferriss, Keith Ferrazzi, Jim Kwik, Wim Hof, Naval Ravikant, Sam Altman, Tom Bilyeu, Jordan Peterson, Simon Sinek, David Goggins, Shawn Stevenson, and many more.
 - **Personal Growth:** Reading, Journaling, Meditation, Daily Ice Baths, Fitness & Health, Learning & Learning How To Learn
 - **Podcasts:**([The Tim Ferris Show](https://tim.blog/podcast/), [Moonshots & Mindsets by Peter Diamandis](https://radicallyhonestpodcast.com/), [How I Built This](https://www.npr.org/podcasts/510313/how-i-built-this), [Impact Theory](https://impacttheory.com/), [Naval](https://nav.al/), [How to Start a Startup](https://player.fm/series/how-to-start-a-startup), [Kwik Brain with Jim Kwik](https://podcasts.apple.com/us/podcast/kwik-brain-with-jim-kwik/id1208024744), and others)
-- [**Music**](https://open.spotify.com/user/126161110?si=80ma-a3bSpexjCqJ75TW-w): [Anjunadeep](https://youtu.be/gaI7fdfyBHQ), Flume, [Fred Again..](https://www.youtube.com/watch?v=c0-hvjV2A5Y), [Above & Beyond](https://www.youtube.com/watch?v=MEzU1HvBo6Y), [Ben Böhmer](https://www.youtube.com/watch?v=RvRhUHTV_8k), [Marsh](https://www.youtube.com/watch?v=KZLntv8hkQM), Seven Lions, Mac Miller, Drake, Travis Scott, Bad Bunny, J Balvin, Maluma, and so many more.
+- [**Music**](https://open.spotify.com/user/126161110?si=80ma-a3bSpexjCqJ75TW-w): [Anjunadeep](https://youtu.be/gaI7fdfyBHQ), Flume, [Fred Again..](https://www.youtube.com/watch?v=c0-hvjV2A5Y), [Above & Beyond](https://www.youtube.com/watch?v=MEzU1HvBo6Y), [Ben Böhmer](https://www.youtube.com/watch?v=RvRhUHTV_8k), [Marsh](https://www.youtube.com/watch?v=KZLntv8hkQM), Seven Lions, Mac Miller, Drake, Travis Scott, Bad Bunny, J Balvin, Maluma, Billie Eilish, Of the Trees, Clozee, and so many more.
 - [Nature](https://www.youtube.com/watch?v=Y2SGfMcemaM)
 - Life
 - Being Present
@@ -64,23 +63,26 @@ I'm also the host of a podcast named [Inventing The Future](https://www.youtube.
   <br />
   <br />
 
-### **Fun facts**
+## **Fun facts**
 
 - I am a first-generation immigrant from [Medellín](https://en.wikipedia.org/wiki/Medell%C3%ADn), Colombia. I visit Medellín every Christmas.
 - I've seen my favorite artist, [Above & Beyond](https://open.spotify.com/artist/10gzBoINW3cLJfZUka8Zoe?si=Nsrna9tfStS4kiFpQHkMuA), 12 times! Their Anjunadeep label is what I now listen to 95% of the time.
-- I'm currently learning how to DJ!
+- I DJ every once in a while and it can get hella lit!
   <br />
   <br />
 
-### **I dream of**
+## **I dream of**
 
 - Manifesting my infinite potential and empowering others to do the same
 - Inspiring others to do the things that inspire them
-- Inventing the Future
+- Inventing the Future of Learning & Education
 - Writing many best selling books
 - Creating beautiful electronic music that induces deep states of flow
+- DJing at a massive music festival
 - Having a podcast with millions of listeners
 - Becoming a billionaire
+- Building a trillion dollar company
 - Creating a legacy that will echo throughout eternity
-- Having a beautiful family
+- Creating a beautiful family
+- Playing soccer with Messi
 - Making my dreams a reality

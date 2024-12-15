@@ -6,35 +6,51 @@
 
 /* Type */
 
+@import url("https://fonts.googleapis.com/css?family=Outfit");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Tilt+Warp&display=swap");
+
+// body {
+//   font-family: "Outfit", sans-serif;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: "Tilt Warp", sans-serif;
+// }
+
 body,
 input,
 select,
 textarea {
-  color: _palette(fg);
-  font-family: _font(family);
-  font-size: 14pt;
+  color: rgb(49, 53, 49);
+  font-family: "Outfit", sans-serif !important;
+  font-size: 16pt;
   font-weight: _font(weight);
   line-height: 1.75;
 
-  @include breakpoint(xlarge) {
-    font-size: 12pt;
-  }
+  // @include breakpoint(xlarge) {
+  //   font-size: 12pt;
+  // }
 
-  @include breakpoint(large) {
-    font-size: 12pt;
-  }
+  // @include breakpoint(large) {
+  //   font-size: 12pt;
+  // }
 
-  @include breakpoint(medium) {
-    font-size: 12pt;
-  }
+  // @include breakpoint(medium) {
+  //   font-size: 12pt;
+  // }
 
-  @include breakpoint(small) {
-    font-size: 12pt;
-  }
+  // @include breakpoint(small) {
+  //   font-size: 12pt;
+  // }
 
-  @include breakpoint(xsmall) {
-    font-size: 12pt;
-  }
+  // @include breakpoint(xsmall) {
+  //   font-size: 12pt;
+  // }
 }
 
 a {
@@ -82,12 +98,11 @@ h4,
 h5,
 h6 {
   color: _palette(fg-bold);
-  font-family: _font(family-heading);
+  // font-family: "Tilt Warp", sans-serif !important;
   font-weight: _font(weight-heading-bold);
-  letter-spacing: _font(kerning-heading);
+  // letter-spacing: 0.15em;
   line-height: 1.65;
   margin: 0 0 (_size(element-margin) * 0.5) 0;
-  text-transform: uppercase;
 
   a {
     color: inherit;
@@ -96,19 +111,19 @@ h6 {
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 h4 {
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 h5 {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 h6 {

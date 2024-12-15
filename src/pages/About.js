@@ -1,4 +1,5 @@
 import React from "react";
+import { Box, Heading } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import raw from "raw.macro";
@@ -18,13 +19,13 @@ const LinkRenderer = ({ ...children }) => <Link {...children} />;
 
 const About = () => (
   <Main title="About" description="Learn about Julian Alvarez ">
-    <article className="post markdown" id="about">
+    <Box className="post markdown" id="about" borderRadius="20px">
       <header>
-        <div className="title">
-          <h2 data-testid="heading">
+        <Box className="title">
+          <Heading as="h2" data-testid="heading">
             <Link to="/about">About Me</Link>
-          </h2>
-        </div>
+          </Heading>
+        </Box>
       </header>
       <ReactMarkdown
         source={markdown}
@@ -33,7 +34,7 @@ const About = () => (
         }}
         escapeHtml={false}
       />
-    </article>
+    </Box>
   </Main>
 );
 

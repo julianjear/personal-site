@@ -22,11 +22,11 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Julian. I love building things, learning, and leading others. I am a Co-Founder
-        & the CEO at <InternalLink to="/Wisdolia">Wisdolia</InternalLink>, and the host of the{" "}
-        <InternalLink to="/podcast">Inventing The Future Podcast</InternalLink>. I am obsessed with
-        the infinite journey of personal growth and love uncovering new ways to continue expanding
-        and manifesting my infinite potential.
+        hi, i&apos;m Julian. i love learning, exploring new ideas & people, and building products &
+        companies that enable humans to become better learner, thinkers, and doers. i am inventing
+        the future of learning at <InternalLink to="/Jungle">Jungle</InternalLink> as the co-founder
+        & ceo. i am obsessed with the infinite journey of personal growth and love uncovering new
+        ways to expand my infinite potential.
       </p>
       <br />
       <ul className="actions">

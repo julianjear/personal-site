@@ -28,11 +28,6 @@ const data = [
     label: "Github",
     icon: faGithub,
   },
-  {
-    link: "https://www.facebook.com/infinitejuliaan",
-    label: "Facebook",
-    icon: faFacebookF,
-  },
 
   {
     link: "mailto:infinite@julian.ai",

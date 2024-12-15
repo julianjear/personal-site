@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Box, Heading } from "@chakra-ui/react";
 import Main from "../layouts/Main";
 import ContactIcons from "../components/Contact/ContactIcons";
 
 const Contact = () => (
   <Main title="Contact" description="Contact Julian Alvarez via email @ infinite@julian.ai">
-    <article className="post" id="contact">
+    <Box className="post" id="contact" borderRadius="20px">
       <header>
-        <div className="title">
-          <h2 data-testid="heading">
+        <Box className="title">
+          <Heading as="h2" data-testid="heading">
             <Link to="/contact">Contact</Link>
-          </h2>
-        </div>
+          </Heading>
+        </Box>
       </header>
       <div className="email-at">
         <p>
@@ -23,7 +23,7 @@ const Contact = () => (
         </p>
       </div>
       <ContactIcons />
-    </article>
+    </Box>
   </Main>
 );
 

@@ -14,23 +14,35 @@ import {
 import { Link as InternalLink } from "react-router-dom";
 import Main from "../layouts/Main";
 
-const Wisdolia = () => (
-  <Main description={"The mission and journey of Julian's startup, Wisdolia"}>
-    <article className="post" id="wisdolia">
+const Jungle = () => (
+  <Main description={"The mission and journey of Julian's startup, Jungle"}>
+    <Box className="post" id="Jungle" borderRadius="20px">
       <header>
-        <div className="title">
-          <h2 data-testid="heading">The Wisdolia Story 🌱</h2>
-        </div>
+        <Box className="title">
+          <Heading as="h2" data-testid="heading">
+            The Jungle Story 🌱
+          </Heading>
+        </Box>
       </header>
-
       <Text>
-        I co-founded Wisdolia in January 2022. We've pivoted 4 times since we started the company
-        and have finally found significant traction in building an app that uses AI to generate
-        smart flashcards from any piece of content. The key idea here is that we are turning any
-        study material into an interactive, personalized, and fun learning experience. You can check
-        out Wisdolia at{" "}
-        <Link href="https://wisdolia.com" targe="_blank">
-          https://wisdolia.com
+        <Heading as="h3" size="lg" mb="20px">
+          What is Jungle?
+        </Heading>
+        At Jungle, we make effective study habits easy and fun. Students can upload any piece of
+        content they upload (PDFs, videos, etc.) and give them practice questions inside a learning
+        experience designed to get them to mastery in a fun and efficient manner.
+        <br />
+        <br />
+        We're currently having a ton of fun experimenting at the intersection of AI, learning
+        science, and gamification to help students become 10x better learners and to help them fall
+        in love with learning. Even though we're currently focused on students, we aim to innovate
+        on learning methods that can benefit everyone.
+        <br />
+        <br />
+        We launched Jungle in Jan 2023 and as of Dec 2024, we are currently at 600k+ users. Check
+        out Jungle for yourself here and lmk what you think!{" "}
+        <Link href="https://jungleai.com" targe="_blank">
+          https://jungleai.com
         </Link>
         <br />
         <br />
@@ -45,15 +57,18 @@ const Wisdolia = () => (
           width={["100%", "70%", "70%"]}
           borderRadius="12px"
         />
-        Since we started the company, we have tested out 6 different ideas. I’ll tell the story of
-        Wisdolia by giving a brief overview on each of the ideas, why we pivoted, and the lessons we
-        gathered from each of them.
-        <br />
-        <br />
       </Text>
-
-      <Heading as="h3" size="md" mb="12px">
-        Idea #1: Learn-to-Earn — The Genesis of Wisdolia
+      <Heading as="h3" size="lg" mb="20px">
+        Some History
+      </Heading>
+      We're enjoying a lot of growth and traction at Jungle, but before that, David and I spend a
+      year tinkering with 5 different ideas before we landed on Jungle. The journey has been as
+      beautiful as it has been challenging. Below, I detail some of the journey and the hard earned
+      lessons we gained along the way.
+      <br />
+      <br />
+      <Heading as="h4" size="20px" mb="12px">
+        Idea #1: Learn-to-Earn — The Genesis of Jungle
       </Heading>
       <Text>
         Mindflow was the name of the first idea that gave birth to the company and it was based on a
@@ -114,8 +129,7 @@ const Wisdolia = () => (
             could be harmful. You can check out a brief overview of our findings{" "}
             <Link
               href="https://mindflowgg.notion.site/Intrinsic-and-Extrinsic-Motivators-on-Mindflow-7f691518794b4778ae908da4218ee803"
-              target="_blank"
-            >
+              target="_blank">
               here
             </Link>
             .
@@ -137,8 +151,7 @@ const Wisdolia = () => (
       </Text>
       <br />
       <br />
-
-      <Heading as="h3" size="md" mb="12px">
+      <Heading as="h4" size="20px" mb="12px">
         Idea #2: The Mindflow Games
       </Heading>
       <Text>
@@ -175,8 +188,7 @@ const Wisdolia = () => (
       </Text>
       <br />
       <br />
-
-      <Heading as="h3" size="md" mb="12px">
+      <Heading as="h4" size="20px" mb="12px">
         Idea #3: Growth Made Social — The Mindflow App
       </Heading>
       <Text>
@@ -204,8 +216,7 @@ const Wisdolia = () => (
       </Text>
       <br />
       <br />
-
-      <Heading as="h3" size="md" mb="12px">
+      <Heading as="h4" size="20px" mb="12px">
         Idea #4: Growth Journeys
       </Heading>
       <Text>
@@ -221,8 +232,7 @@ const Wisdolia = () => (
       </Text>
       <br />
       <br />
-
-      <Heading as="h3" size="md" mb="12px">
+      <Heading as="h4" size="20px" mb="12px">
         Mini retrospective on the Mindflow App
       </Heading>
       <Text>
@@ -252,16 +262,14 @@ const Wisdolia = () => (
         the Mindflow app{" "}
         <Link
           href="https://mindflowgg.notion.site/Mindflow-Social-App-Post-Mortem-305b22742b8b4882bc9d04842d0e2091"
-          targe="_blank"
-        >
+          targe="_blank">
           here
         </Link>
         .
       </Text>
       <br />
       <br />
-
-      <Heading as="h3" size="md" mb="12px">
+      <Heading as="h4" size="20px" mb="12px">
         Idea #5: Sparkin Joy — Connecting the World Through Gratitude
       </Heading>
       <Text>
@@ -288,37 +296,7 @@ const Wisdolia = () => (
       </Text>
       <br />
       <br />
-
-      <Heading as="h3" size="md" mb="12px">
-        Idea #6: Wisdolia
-      </Heading>
-      <Text>
-        Wisdolia is what we're currently working on and it's finally the first idea that is working
-        really well (100,000s of users)! At Wisdolia, we're building an AI learning copilot that
-        turns any study material into an interactive, personalized, and fun learning experience. We
-        started off by creating a site that uses AI to generate smart flashcards from any piece of
-        content (articles, PDFs, or YouTube videos). It has proven to be extremely valuable for
-        students because of how much time it saves them from having to create flashcards. You can
-        also answer the generated questions to get immediate feedback on what you got right or wrong
-        in your response, thus enabling deeper understanding quicker.
-        <br />
-        <br />
-        Overall, we’re excited about Wisdolia and the potential of what it could become. David and I
-        are infinitely curious people that love to learn so we’ve been having a lot of fun thinking
-        about how we can transform any student into a super learner that can retain and understand
-        anything 10x better and faster.
-        <br />
-        <br />
-        You can check out Wisdolia at{" "}
-        <Link href="https://wisdolia.com" targe="_blank">
-          https://wisdolia.com
-        </Link>
-        .
-      </Text>
-      <br />
-      <br />
-
-      <Heading as="h3" size="md" mb="12px">
+      <Heading as="h3" size="lg" mb="20px">
         Closing Thoughts
       </Heading>
       <Text>
@@ -333,8 +311,7 @@ const Wisdolia = () => (
         you take a shot on goal. You can read more about this particular lesson I learned through{" "}
         <Link
           href="https://www.linkedin.com/feed/update/urn:li:activity:7019362364449820672"
-          target="_blank"
-        >
+          target="_blank">
           this LinkedIn post.
         </Link>
         <br />
@@ -349,26 +326,19 @@ const Wisdolia = () => (
         <br />
         Feel free to reach out if you'd like to learn more about any part of our journey:
         infinite@julian.ai.
-        <br />
-        <br />
-        P.S. Wondering where the name Wisdolia came from? It's a derivative of the word wisdom and
-        we think about it as a kingdom of wisdom where anyone that enters the kingdom is granted the
-        super power of infinite wisdom. But actually in reality we just wanted a .com domain and
-        needed to invent a new word lol 😂
       </Text>
       <br />
       <br />
-
       <Image
-        src="/images/WisdoliaHelixTree.png"
-        alt="The Wisdolia tree"
+        src="/images/JungleHelixTree.png"
+        alt="The Jungle tree"
         margin="0 auto"
         mb="31px"
         width={["100%", "70%", "70%"]}
         borderRadius="12px"
       />
-    </article>
+    </Box>
   </Main>
 );
 
-export default Wisdolia;
+export default Jungle;

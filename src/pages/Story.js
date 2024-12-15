@@ -19,13 +19,14 @@ const Story = () => (
   <Main
     description={
       "Julian tells two stories from his life 1) the discovery of his purpose and 2) the biggest mistake he's ever made"
-    }
-  >
-    <article className="post" id="story">
+    }>
+    <Box className="post" id="story" borderRadius="20px">
       <header>
-        <div className="title">
-          <h2 data-testid="heading">Story 📖</h2>
-        </div>
+        <Box className="title">
+          <Heading as="h2" data-testid="heading">
+            Story 📖
+          </Heading>
+        </Box>
       </header>
       <Text mb="12px">
         There are two stories from my life that in aggregate do a great job at communicating who I
@@ -73,8 +74,7 @@ const Story = () => (
         textAlign="center"
         fontSize="14px"
         color="rgba(117, 117, 117, 1)"
-        width={["90%", "60%", "60%"]}
-      >
+        width={["90%", "60%", "60%"]}>
         Hanging out in the outskirts of Medellin (up in the mountains) during Christmas 2022
       </Text>
       <Image
@@ -159,8 +159,7 @@ const Story = () => (
           textAlign="center"
           fontSize="14px"
           color="rgba(117, 117, 117, 1)"
-          width={["90%", "45%", "45%"]}
-        >
+          width={["90%", "45%", "45%"]}>
           My favorite Tony Robbins book, which succinctly communicates many of his core ideas in 100
           pages.
         </Text>
@@ -227,15 +226,15 @@ const Story = () => (
         <br />
         <br />
         I have since been to 6 Tony Robbins seminars, consumed countless books and courses on
-        personal growth, co-founded two companies (Wisdolia & Vize), started a podcast (Inventing
-        The Future), and worked as a Software Engineer at Meta (on the learning team), LinkedIn
+        personal growth, co-founded two companies (Jungle & Vize), started a podcast (Inventing The
+        Future), and worked as a Software Engineer at Meta (on the learning team), LinkedIn
         Learning, and Goldman Sachs. I did all of these things within 5 years of attending my first
         Tony Robbins seminar.
         <br />
         <br />
-        Currently my purpose has led me to start Wisdolia, where we are on a mission to transform
+        Currently my purpose has led me to start Jungle, where we are on a mission to transform
         anyone into a super learner who can retain and understand anything 10x better and faster.
-        You can learn more about Wisdolia <InternalLink to="/Wisdolia">here</InternalLink>. <br />
+        You can learn more about Jungle <InternalLink to="/Jungle">here</InternalLink>. <br />
         It also led me to start my podcast, Inventing The Future, where our mission is to inspire
         and empower young entrepreneurs to solve the world’s biggest problems. You can learn more
         about my podcast <InternalLink to="/podcast">here</InternalLink>.
@@ -377,8 +376,8 @@ const Story = () => (
         I went back to college, finished my last semester, and then I moved to Palo Alto, California
         when I started working at Meta.
         <br />
-        <br />I left Vize in January of 2022 when I decided to start Wisdolia and after a whopping
-        9.5 months at Meta, I decided to leave to go all in on Wisdolia.
+        <br />I left Vize in January of 2022 when I decided to start Jungle and after a whopping 9.5
+        months at Meta, I decided to leave to go all in on Jungle.
       </Text>
       <br />
       <br />
@@ -395,8 +394,7 @@ const Story = () => (
         about what it’s like to do a silent retreat and what you can gain from it, you can check out{" "}
         <Link
           href="https://open.spotify.com/episode/2MtGgijDIPydjdfLZIsT8m?si=bce3a15845ae4650"
-          target="_blank"
-        >
+          target="_blank">
           this podcast episode
         </Link>{" "}
         that I recorded on it.
@@ -415,8 +413,7 @@ const Story = () => (
           fontSize="14px"
           color="rgba(117, 117, 117, 1)"
           width={["90%", "60%", "60%"]}
-          margin="0 auto"
-        >
+          margin="0 auto">
           Picture from my 5 day silent retreat, where I rented out an AirBnb out in the woods,
           disconnected from the world (no internet) so that I could reconnect with a deeper part of
           myself. I wrote day and night and learned a ton about who I am.
@@ -470,8 +467,7 @@ const Story = () => (
           fontSize="14px"
           color="rgba(117, 117, 117, 1)"
           width={["90%", "60%", "60%"]}
-          margin="0 auto"
-        >
+          margin="0 auto">
           I read this book by Eckhart Tolle shortly after my university decided to suspend me for a
           year. This book talks a lot about consciousness, awareness, and the ego. The book came at
           an instrumental time for me because it help me cope with the loss of identity I had
@@ -486,7 +482,7 @@ const Story = () => (
         share your story & your mistakes with the world or with myself. Reach out at
         infinite@julian.ai
       </Text>
-    </article>
+    </Box>
   </Main>
 );
 

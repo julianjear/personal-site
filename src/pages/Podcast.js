@@ -30,11 +30,13 @@ const SimpleForm = () => <MailchimpSubscribe url={url}> asdf </MailchimpSubscrib
 
 const Podcast = () => (
   <Main description={"Julian's podcast, Inventing The Future"}>
-    <article className="post" id="podcast">
+    <Box className="post" id="podcast" borderRadius="20px">
       <header>
-        <div className="title">
-          <h2 data-testid="heading">Inventing The Future Podcast 🎙</h2>
-        </div>
+        <Box className="title">
+          <Heading as="h2" data-testid="heading">
+            Inventing The Future Podcast 🎙
+          </Heading>
+        </Box>
       </header>
 
       <Text mb="20px" fontWeight={700} fontSize="20px" textAlign="center">
@@ -46,8 +48,7 @@ const Podcast = () => (
         target="_blank"
         rel="noreferrer"
         style={{ textDecoration: "none", borderBottomStyle: "none" }}
-        mb="30px"
-      >
+        mb="30px">
         <Image
           src="/images/ITFCover.jpg"
           alt="Inventing The Future Cover"
@@ -66,8 +67,7 @@ const Podcast = () => (
           as="a"
           leftIcon={<FaYoutube />}
           href="https://www.youtube.com/@inventing.the.future"
-          target="_blank"
-        >
+          target="_blank">
           YouTube
         </Button>
 
@@ -143,16 +143,14 @@ const Podcast = () => (
           as="a"
           leftIcon={<FaTiktok />}
           href="https://tiktok.com/@inventing.the.future"
-          target="_blank"
-        >
+          target="_blank">
           TikTok
         </Button>
         <Button
           as="a"
           leftIcon={<FaInstagram />}
           href="https://www.instagram.com/inventing.the.future"
-          target="_blank"
-        >
+          target="_blank">
           Instagram
         </Button>
         <Button as="a" leftIcon={<FaTwitter />} href="https://twitter.com/ITFpod" target="_blank">
@@ -162,16 +160,14 @@ const Podcast = () => (
           as="a"
           leftIcon={<FaYoutube />}
           href="https://www.youtube.com/@inventing.the.future"
-          target="_blank"
-        >
+          target="_blank">
           YouTube
         </Button>
         <Button
           as="a"
           leftIcon={<FaLinkedin />}
           href="https://www.linkedin.com/company/inventingthefuture"
-          target="_blank"
-        >
+          target="_blank">
           LinkedIn
         </Button>
       </HStack>
@@ -208,8 +204,7 @@ const Podcast = () => (
         <ListItem>
           <Link
             href="https://open.spotify.com/episode/5GgWh0UKGTa9rNzMKr7kss?si=ed3546217df14ef5"
-            target="_blank"
-          >
+            target="_blank">
             "Wish I Knew..." Podcast with Gary Nowak — A reflection on my time at Meta as a Software
             Engineer and at Vize as the CTO - Released July, 2022
           </Link>
@@ -217,8 +212,7 @@ const Podcast = () => (
         <ListItem>
           <Link
             href="https://open.spotify.com/episode/2zf8M1synRribYMTpsul7V?si=a29b928170b34f00"
-            target="_blank"
-          >
+            target="_blank">
             Inventing The Future Solo Episode — Telling three stories of the most impactful turning
             points in my life 1) recognition of my privilege 2) the discovery of my purpose 3) my
             biggest mistake — Released January, 2022
@@ -227,8 +221,7 @@ const Podcast = () => (
         <ListItem>
           <Link
             href="https://open.spotify.com/episode/6K3xFCreMFm61poGGua1IF?si=l43O1o6ASASvDewzWC3oJQ"
-            target="_blank"
-          >
+            target="_blank">
             "The Captain's Lifestyle" with Taylor Morgan — Speaking about the importance of health
             and vitality to maximize productivity and avoid burnout — Released June, 2021
           </Link>
@@ -236,14 +229,13 @@ const Podcast = () => (
         <ListItem>
           <Link
             href="https://open.spotify.com/episode/6hjRu1RrZCU3hOLxcNfWQT?si=c1653f0a15a04f9a"
-            target="_blank"
-          >
+            target="_blank">
             "Radically Honest" Podcast with Dasom Lee — Being vulnerable and talking about my
             biggest mistake and the challenges of being a founder — Released July, 2020
           </Link>
         </ListItem>
       </OrderedList>
-    </article>
+    </Box>
   </Main>
 );
 
