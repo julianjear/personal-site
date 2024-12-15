@@ -22,7 +22,7 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        hi, i&apos;m Julian. i love learning, exploring new ideas & people, and building products &
+        hi, i&apos;m Julian! i love learning, exploring new ideas & people, and building products &
         companies that enable humans to become better learner, thinkers, and doers. i am inventing
         the future of learning at <InternalLink to="/Jungle">Jungle</InternalLink> as the co-founder
         & ceo. i am obsessed with the infinite journey of personal growth and love uncovering new
