@@ -115,6 +115,20 @@ const Cosmic = () => {
             to { opacity: 1; transform: translateY(0); }
           }
           .cosmic-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            height: 48px;
+            padding: 0 26px;
+            border-radius: 9999px;
+            background-color: ${COLORS.portal};
+            color: ${COLORS.midnight};
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.005em;
+            text-decoration: none;
+            box-shadow: 0 0 20px 0 rgba(123, 127, 255, 0.30);
             transition:
               background-color 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
               transform 150ms cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -209,26 +223,7 @@ const Cosmic = () => {
             }}
           >
             {canDownload ? (
-              <a
-                className="cosmic-cta"
-                href={downloadUrl}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "10px",
-                  background: COLORS.portal,
-                  color: COLORS.midnight,
-                  padding: "0 26px",
-                  height: "48px",
-                  borderRadius: "9999px",
-                  fontFamily: "inherit",
-                  fontSize: "0.95rem",
-                  fontWeight: 600,
-                  letterSpacing: "0.005em",
-                  textDecoration: "none",
-                  boxShadow: "0 0 20px 0 rgba(123, 127, 255, 0.30)",
-                }}
-              >
+              <a className="cosmic-cta" href={downloadUrl}>
                 <AppleGlyph />
                 <span>Download for macOS</span>
               </a>
