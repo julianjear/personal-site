@@ -116,20 +116,14 @@ const Cosmic = () => {
           }
           .cosmic-cta {
             transition:
-              background-color 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
-              box-shadow 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
-              transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1);
+              background-color 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 150ms cubic-bezier(0.2, 0.8, 0.2, 1);
           }
           .cosmic-cta:hover {
             background-color: ${COLORS.portalHover};
-            box-shadow: 0 0 40px 0 rgba(123, 127, 255, 0.35);
           }
           .cosmic-cta:active {
-            transform: scale(0.97);
-            box-shadow:
-              inset 0 0 0 1px rgba(16, 14, 23, 0.25),
-              inset 0 2px 4px rgba(16, 14, 23, 0.22),
-              0 0 12px 0 rgba(123, 127, 255, 0.20);
+            transform: scale(0.98);
             transition-duration: 0ms;
           }
           .cosmic-cta:focus-visible {
@@ -279,9 +273,7 @@ const Cosmic = () => {
             <video
               src="/cosmic-demo.mp4"
               poster="/cosmic-demo-poster.jpg"
-              autoPlay
-              muted
-              loop
+              controls
               playsInline
               preload="metadata"
               style={{
