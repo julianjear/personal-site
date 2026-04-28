@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import SkyOrb from "../components/SkyOrb";
+import Stars from "../components/Stars";
 
 // Releases live in the cosmic-mac-app companion repo (mirrors the
 // makesomething pattern). The page hits the GitHub API on mount, finds
@@ -114,6 +115,15 @@ const Cosmic = () => {
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
           }
+          @keyframes cosmic-star-twinkle {
+            0%, 100% { opacity: var(--star-opacity, 0.6); }
+            50%      { opacity: 0.12; }
+          }
+          .cosmic-star-twinkle {
+            animation-name: cosmic-star-twinkle;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
           .cosmic-cta {
             display: inline-flex;
             align-items: center;
@@ -145,22 +155,23 @@ const Cosmic = () => {
             outline-offset: 2px;
           }
           @media (prefers-reduced-motion: reduce) {
-            .cosmic-fade { animation: none !important; }
+            .cosmic-fade, .cosmic-star-twinkle { animation: none !important; }
           }
         `}</style>
       </Helmet>
+
+      <Stars />
 
       <div
         style={{
           position: "fixed",
           inset: 0,
-          background: COLORS.midnight,
           color: COLORS.fgPrimary,
           fontFamily:
             "'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
           overflowY: "auto",
           overflowX: "hidden",
-          zIndex: 1000,
+          zIndex: 1,
         }}
       >
         <main
