@@ -17,6 +17,7 @@ const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Podcast = lazy(() => import("./pages/Podcast"));
+const Cosmic = lazy(() => import("./pages/Cosmic"));
 
 const App = () => (
   <ChakraProvider>
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
           <Route path="/podcast" component={Podcast} />
+          <Route path="/cosmic" component={Cosmic} />
           <Route component={NotFound} status={404} />
         </Switch>
       </Suspense>

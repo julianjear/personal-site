@@ -1,0 +1,316 @@
+import React, { useEffect, useState } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+// Releases live in the cosmic-mac-app companion repo (mirrors the
+// makesomething pattern). The page hits the GitHub API on mount, finds
+// the latest .dmg asset, and falls back to the releases page if the
+// API call fails.
+const GITHUB_REPO = "julianjear/cosmic-mac-app";
+const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_REPO}/releases/latest`;
+
+const COLORS = {
+  midnight: "#100E17",
+  surface1: "#1C1A2E",
+  border: "rgba(165, 169, 255, 0.18)",
+  textPrimary: "#EEEAFF",
+  textSecondary: "#B8B5C8",
+  textTertiary: "#7C7891",
+  portal: "#7B7FFF",
+  portalHover: "#9499FF",
+  portalLight: "#A5A9FF",
+  warn: "#D4956B",
+};
+
+function detectPlatform() {
+  if (typeof navigator === "undefined") return "macos";
+  const ua = navigator.userAgent.toLowerCase();
+  if (/iphone|ipad|ipod|android/.test(ua)) return "mobile";
+  if (ua.includes("mac")) return "macos";
+  if (ua.includes("win")) return "windows";
+  if (ua.includes("linux")) return "linux";
+  return "macos";
+}
+
+// Chrome/Edge freeze the UA string at "Mac OS X 10_15_7" on every
+// modern macOS, so prefer User-Agent Client Hints when available and
+// only fall back to UA parsing for Safari/Firefox.
+async function detectMacOSVersion() {
+  if (typeof navigator === "undefined") return null;
+
+  if ("userAgentData" in navigator) {
+    try {
+      const hints = await navigator.userAgentData.getHighEntropyValues([
+        "platformVersion",
+      ]);
+      if (hints.platformVersion) {
+        const major = parseInt(hints.platformVersion.split(".")[0], 10);
+        if (!Number.isNaN(major)) return major;
+      }
+    } catch {
+      // fall through to UA parsing
+    }
+  }
+
+  const match = navigator.userAgent.match(/Mac OS X (\d+)[_.]/);
+  if (match) {
+    const major = parseInt(match[1], 10);
+    // Chrome/Edge freeze the UA at 10_15_7 on every modern macOS;
+    // treat that as unknown rather than as a real macOS 10 machine.
+    if (!Number.isNaN(major) && major !== 10) return major;
+  }
+  return null;
+}
+
+const Cosmic = () => {
+  const [downloadUrl, setDownloadUrl] = useState(FALLBACK_DOWNLOAD_URL);
+  const [appVersion, setAppVersion] = useState("");
+  const [platform, setPlatform] = useState("macos");
+  const [macOSMajor, setMacOSMajor] = useState(null);
+
+  useEffect(() => {
+    setPlatform(detectPlatform());
+    detectMacOSVersion().then((v) => setMacOSMajor(v));
+  }, []);
+
+  useEffect(() => {
+    fetch(`https://api.github.com/repos/${GITHUB_REPO}/releases/latest`)
+      .then((r) => (r.ok ? r.json() : Promise.reject(r)))
+      .then((release) => {
+        const dmg = release.assets?.find((a) => a.name.endsWith(".dmg"));
+        if (dmg) setDownloadUrl(dmg.browser_download_url);
+        if (release.tag_name) setAppVersion(release.tag_name);
+      })
+      .catch(() => {
+        // Silently keep the fallback releases-page URL.
+      });
+  }, []);
+
+  const isMac = platform === "macos";
+  const isOldMac = isMac && macOSMajor !== null && macOSMajor < 14;
+  const canDownload = isMac && !isOldMac;
+
+  return (
+    <HelmetProvider>
+      <Helmet>
+        <title>cosmic</title>
+        <meta
+          name="description"
+          content="cosmic — a second brain for your browser. macOS, AI-native."
+        />
+        <meta name="theme-color" content={COLORS.midnight} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+        <style>{`
+          html, body, #root, #wrapper, #main { background: ${COLORS.midnight}; }
+          body { margin: 0; }
+          @keyframes cosmic-fade-up {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          @keyframes cosmic-portal-pulse {
+            0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 0.85; transform: translate(-50%, -50%) scale(1.04); }
+          }
+          .cosmic-cta {
+            transition: background 200ms ease, box-shadow 240ms ease, transform 120ms ease;
+          }
+          .cosmic-cta:hover {
+            background: ${COLORS.portalHover};
+            box-shadow:
+              0 0 0 1px ${COLORS.portalLight},
+              0 12px 36px rgba(123, 127, 255, 0.42),
+              0 0 100px rgba(123, 127, 255, 0.28);
+          }
+          .cosmic-cta:active { transform: scale(0.985); }
+          @media (prefers-reduced-motion: reduce) {
+            .cosmic-portal-glow, .cosmic-fade { animation: none !important; }
+          }
+        `}</style>
+      </Helmet>
+
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          background: COLORS.midnight,
+          color: COLORS.textPrimary,
+          fontFamily:
+            "'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+          overflow: "hidden",
+          zIndex: 1000,
+        }}
+      >
+        {/* Portal glow — portal indigo light bleeding through midnight */}
+        <div
+          className="cosmic-portal-glow"
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "38%",
+            width: "min(900px, 110vw)",
+            height: "min(900px, 110vw)",
+            pointerEvents: "none",
+            background:
+              "radial-gradient(circle, rgba(123,127,255,0.22) 0%, rgba(123,127,255,0.06) 35%, transparent 65%)",
+            filter: "blur(20px)",
+            animation: "cosmic-portal-pulse 9s ease-in-out infinite",
+          }}
+        />
+
+        <main
+          style={{
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            minHeight: "100vh",
+            padding: "0 24px",
+            textAlign: "center",
+          }}
+        >
+          <h1
+            className="cosmic-fade"
+            style={{
+              fontSize: "clamp(3rem, 10vw, 6rem)",
+              fontWeight: 700,
+              letterSpacing: "-0.05em",
+              lineHeight: 1,
+              margin: 0,
+              color: COLORS.textPrimary,
+              animation: "cosmic-fade-up 0.7s ease-out both",
+            }}
+          >
+            cosmic
+          </h1>
+
+          <p
+            className="cosmic-fade"
+            style={{
+              fontSize: "clamp(1.05rem, 1.6vw, 1.25rem)",
+              fontWeight: 400,
+              letterSpacing: "-0.01em",
+              lineHeight: 1.5,
+              margin: "20px 0 0",
+              maxWidth: "32ch",
+              color: COLORS.textSecondary,
+              animation: "cosmic-fade-up 0.7s 0.08s ease-out both",
+            }}
+          >
+            A second brain for your browser.
+          </p>
+
+          <div
+            className="cosmic-fade"
+            style={{
+              marginTop: "44px",
+              animation: "cosmic-fade-up 0.7s 0.16s ease-out both",
+            }}
+          >
+            {canDownload ? (
+              <a
+                className="cosmic-cta"
+                href={downloadUrl}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  background: COLORS.portal,
+                  color: "#0B0A10",
+                  padding: "14px 26px",
+                  borderRadius: "999px",
+                  fontSize: "0.95rem",
+                  fontWeight: 600,
+                  letterSpacing: "-0.01em",
+                  textDecoration: "none",
+                  boxShadow:
+                    "0 0 0 1px rgba(123,127,255,0.4), 0 8px 28px rgba(123,127,255,0.32)",
+                }}
+              >
+                <AppleGlyph />
+                <span>Download for macOS</span>
+              </a>
+            ) : isOldMac ? (
+              <Pill tone="warn">
+                Requires macOS 14 (Sonoma) or later — you’re on macOS{" "}
+                {macOSMajor}.
+              </Pill>
+            ) : (
+              <Pill tone="muted">
+                {platform === "mobile"
+                  ? "Visit on your Mac to download"
+                  : "Available for macOS 14 or later"}
+              </Pill>
+            )}
+          </div>
+
+          <p
+            className="cosmic-fade"
+            style={{
+              marginTop: "22px",
+              fontFamily:
+                "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace",
+              fontSize: "0.72rem",
+              fontWeight: 500,
+              letterSpacing: "0.02em",
+              color: COLORS.textTertiary,
+              animation: "cosmic-fade-up 0.7s 0.24s ease-out both",
+            }}
+          >
+            {appVersion ? `${appVersion} · ` : ""}macOS 14+ · Apple Silicon &
+            Intel
+          </p>
+        </main>
+      </div>
+    </HelmetProvider>
+  );
+};
+
+const AppleGlyph = () => (
+  <svg
+    width="14"
+    height="17"
+    viewBox="0 0 16 20"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M13.182 10.625c-.02-2.065 1.686-3.058 1.763-3.105-.96-1.404-2.454-1.596-2.987-1.618-1.272-.129-2.484.749-3.131.749-.647 0-1.648-.73-2.708-.71-1.393.02-2.678.81-3.394 2.058-1.447 2.51-.37 6.228 1.04 8.266.688.997 1.508 2.116 2.586 2.076 1.037-.042 1.429-.67 2.682-.67 1.253 0 1.604.67 2.693.649 1.117-.02 1.824-1.016 2.508-2.015.79-1.156 1.116-2.274 1.136-2.332-.025-.01-2.179-.836-2.2-3.316l.012-.032zM11.1 4.2c.572-.693.958-1.655.852-2.614-.824.034-1.822.549-2.412 1.242-.53.613-.993 1.592-.868 2.53.919.072 1.856-.467 2.428-1.158z" />
+  </svg>
+);
+
+const Pill = ({ tone, children }) => {
+  const isWarn = tone === "warn";
+  return (
+    <div
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "10px",
+        padding: "12px 22px",
+        borderRadius: "999px",
+        background: isWarn
+          ? "rgba(212, 149, 107, 0.08)"
+          : "rgba(28, 26, 46, 0.7)",
+        border: `1px solid ${isWarn ? "rgba(212,149,107,0.28)" : COLORS.border}`,
+        fontSize: "0.85rem",
+        fontWeight: 500,
+        color: isWarn ? COLORS.warn : COLORS.textSecondary,
+        backdropFilter: "blur(8px)",
+        WebkitBackdropFilter: "blur(8px)",
+      }}
+    >
+      <AppleGlyph />
+      <span>{children}</span>
+    </div>
+  );
+};
+
+export default Cosmic;
