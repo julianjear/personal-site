@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import SkyOrb from "../components/SkyOrb";
 
 // Releases live in the cosmic-mac-app companion repo (mirrors the
 // makesomething pattern). The page hits the GitHub API on mount, finds
@@ -11,14 +12,14 @@ const FALLBACK_DOWNLOAD_URL = `https://github.com/${GITHUB_REPO}/releases/latest
 const COLORS = {
   midnight: "#100E17",
   surface1: "#1C1A2E",
-  border: "rgba(165, 169, 255, 0.18)",
-  textPrimary: "#EEEAFF",
-  textSecondary: "#B8B5C8",
-  textTertiary: "#7C7891",
+  fgPrimary: "#E8E6F0",
+  fgSecondary: "#C6D0F5",
+  fgTertiary: "#9A9ABF",
+  fgGhost: "#5E5C7A",
   portal: "#7B7FFF",
-  portalHover: "#9499FF",
-  portalLight: "#A5A9FF",
-  warn: "#D4956B",
+  portalHover: "#8F92FF",
+  portalHair: "rgba(123, 127, 255, 0.18)",
+  warn: "#E8B08A",
 };
 
 function detectPlatform() {
@@ -63,7 +64,6 @@ async function detectMacOSVersion() {
 
 const Cosmic = () => {
   const [downloadUrl, setDownloadUrl] = useState(FALLBACK_DOWNLOAD_URL);
-  const [appVersion, setAppVersion] = useState("");
   const [platform, setPlatform] = useState("macos");
   const [macOSMajor, setMacOSMajor] = useState(null);
 
@@ -78,7 +78,6 @@ const Cosmic = () => {
       .then((release) => {
         const dmg = release.assets?.find((a) => a.name.endsWith(".dmg"));
         if (dmg) setDownloadUrl(dmg.browser_download_url);
-        if (release.tag_name) setAppVersion(release.tag_name);
       })
       .catch(() => {
         // Silently keep the fallback releases-page URL.
@@ -95,7 +94,7 @@ const Cosmic = () => {
         <title>cosmic</title>
         <meta
           name="description"
-          content="cosmic — a second brain for your browser. macOS, AI-native."
+          content="cosmic — instantly capture notes or start a conversation with anything you read or watch on your computer."
         />
         <meta name="theme-color" content={COLORS.midnight} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -115,23 +114,30 @@ const Cosmic = () => {
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
           }
-          @keyframes cosmic-portal-pulse {
-            0%, 100% { opacity: 0.55; transform: translate(-50%, -50%) scale(1); }
-            50% { opacity: 0.85; transform: translate(-50%, -50%) scale(1.04); }
-          }
           .cosmic-cta {
-            transition: background 200ms ease, box-shadow 240ms ease, transform 120ms ease;
+            transition:
+              background-color 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1);
           }
           .cosmic-cta:hover {
-            background: ${COLORS.portalHover};
-            box-shadow:
-              0 0 0 1px ${COLORS.portalLight},
-              0 12px 36px rgba(123, 127, 255, 0.42),
-              0 0 100px rgba(123, 127, 255, 0.28);
+            background-color: ${COLORS.portalHover};
+            box-shadow: 0 0 40px 0 rgba(123, 127, 255, 0.35);
           }
-          .cosmic-cta:active { transform: scale(0.985); }
+          .cosmic-cta:active {
+            transform: scale(0.97);
+            box-shadow:
+              inset 0 0 0 1px rgba(16, 14, 23, 0.25),
+              inset 0 2px 4px rgba(16, 14, 23, 0.22),
+              0 0 12px 0 rgba(123, 127, 255, 0.20);
+            transition-duration: 0ms;
+          }
+          .cosmic-cta:focus-visible {
+            outline: 2px solid ${COLORS.portal};
+            outline-offset: 2px;
+          }
           @media (prefers-reduced-motion: reduce) {
-            .cosmic-portal-glow, .cosmic-fade { animation: none !important; }
+            .cosmic-fade { animation: none !important; }
           }
         `}</style>
       </Helmet>
@@ -141,52 +147,44 @@ const Cosmic = () => {
           position: "fixed",
           inset: 0,
           background: COLORS.midnight,
-          color: COLORS.textPrimary,
+          color: COLORS.fgPrimary,
           fontFamily:
             "'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
-          overflow: "hidden",
+          overflowY: "auto",
+          overflowX: "hidden",
           zIndex: 1000,
         }}
       >
-        {/* Portal glow — portal indigo light bleeding through midnight */}
-        <div
-          className="cosmic-portal-glow"
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "38%",
-            width: "min(900px, 110vw)",
-            height: "min(900px, 110vw)",
-            pointerEvents: "none",
-            background:
-              "radial-gradient(circle, rgba(123,127,255,0.22) 0%, rgba(123,127,255,0.06) 35%, transparent 65%)",
-            filter: "blur(20px)",
-            animation: "cosmic-portal-pulse 9s ease-in-out infinite",
-          }}
-        />
-
         <main
           style={{
-            position: "relative",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center",
-            minHeight: "100vh",
-            padding: "0 24px",
+            padding: "72px 24px 96px",
             textAlign: "center",
+            minHeight: "100%",
           }}
         >
+          <div
+            className="cosmic-fade"
+            style={{
+              animation: "cosmic-fade-up 0.8s ease-out both",
+              marginBottom: "8px",
+            }}
+          >
+            <SkyOrb size={148} />
+          </div>
+
           <h1
             className="cosmic-fade"
             style={{
-              fontSize: "clamp(3rem, 10vw, 6rem)",
+              fontSize: "clamp(2.6rem, 9vw, 5rem)",
               fontWeight: 700,
               letterSpacing: "-0.05em",
               lineHeight: 1,
               margin: 0,
-              color: COLORS.textPrimary,
-              animation: "cosmic-fade-up 0.7s ease-out both",
+              color: COLORS.fgPrimary,
+              animation: "cosmic-fade-up 0.7s 0.08s ease-out both",
             }}
           >
             cosmic
@@ -195,24 +193,25 @@ const Cosmic = () => {
           <p
             className="cosmic-fade"
             style={{
-              fontSize: "clamp(1.05rem, 1.6vw, 1.25rem)",
+              fontSize: "clamp(1rem, 1.4vw, 1.15rem)",
               fontWeight: 400,
-              letterSpacing: "-0.01em",
+              letterSpacing: "-0.005em",
               lineHeight: 1.5,
               margin: "20px 0 0",
-              maxWidth: "32ch",
-              color: COLORS.textSecondary,
-              animation: "cosmic-fade-up 0.7s 0.08s ease-out both",
+              maxWidth: "52ch",
+              color: COLORS.fgSecondary,
+              animation: "cosmic-fade-up 0.7s 0.16s ease-out both",
             }}
           >
-            A second brain for your browser.
+            Instantly capture notes or start a conversation with anything you
+            read or watch on your computer.
           </p>
 
           <div
             className="cosmic-fade"
             style={{
               marginTop: "44px",
-              animation: "cosmic-fade-up 0.7s 0.16s ease-out both",
+              animation: "cosmic-fade-up 0.7s 0.24s ease-out both",
             }}
           >
             {canDownload ? (
@@ -224,15 +223,16 @@ const Cosmic = () => {
                   alignItems: "center",
                   gap: "10px",
                   background: COLORS.portal,
-                  color: "#0B0A10",
-                  padding: "14px 26px",
-                  borderRadius: "999px",
+                  color: COLORS.midnight,
+                  padding: "0 26px",
+                  height: "48px",
+                  borderRadius: "9999px",
+                  fontFamily: "inherit",
                   fontSize: "0.95rem",
                   fontWeight: 600,
-                  letterSpacing: "-0.01em",
+                  letterSpacing: "0.005em",
                   textDecoration: "none",
-                  boxShadow:
-                    "0 0 0 1px rgba(123,127,255,0.4), 0 8px 28px rgba(123,127,255,0.32)",
+                  boxShadow: "0 0 20px 0 rgba(123, 127, 255, 0.30)",
                 }}
               >
                 <AppleGlyph />
@@ -255,19 +255,46 @@ const Cosmic = () => {
           <p
             className="cosmic-fade"
             style={{
-              marginTop: "22px",
-              fontFamily:
-                "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace",
-              fontSize: "0.72rem",
+              marginTop: "72px",
+              marginBottom: "16px",
+              fontSize: "0.7rem",
               fontWeight: 500,
-              letterSpacing: "0.02em",
-              color: COLORS.textTertiary,
-              animation: "cosmic-fade-up 0.7s 0.24s ease-out both",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: COLORS.fgGhost,
+              animation: "cosmic-fade-up 0.7s 0.32s ease-out both",
             }}
           >
-            {appVersion ? `${appVersion} · ` : ""}macOS 14+ · Apple Silicon &
-            Intel
+            Cosmic demo
           </p>
+
+          <div
+            className="cosmic-fade"
+            style={{
+              width: "100%",
+              maxWidth: "880px",
+              animation: "cosmic-fade-up 0.7s 0.4s ease-out both",
+            }}
+          >
+            <video
+              src="/cosmic-demo.mp4"
+              poster="/cosmic-demo-poster.jpg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              style={{
+                display: "block",
+                width: "100%",
+                height: "auto",
+                borderRadius: "16px",
+                background: COLORS.surface1,
+                boxShadow:
+                  "0 24px 60px 0 rgba(0,0,0,0.55), 0 0 0 1px rgba(123,127,255,0.18), 0 0 40px 0 rgba(123,127,255,0.12)",
+              }}
+            />
+          </div>
         </main>
       </div>
     </HelmetProvider>
@@ -295,14 +322,14 @@ const Pill = ({ tone, children }) => {
         alignItems: "center",
         gap: "10px",
         padding: "12px 22px",
-        borderRadius: "999px",
+        borderRadius: "9999px",
         background: isWarn
-          ? "rgba(212, 149, 107, 0.08)"
+          ? "rgba(212, 149, 107, 0.12)"
           : "rgba(28, 26, 46, 0.7)",
-        border: `1px solid ${isWarn ? "rgba(212,149,107,0.28)" : COLORS.border}`,
+        border: `1px solid ${isWarn ? "rgba(212,149,107,0.28)" : COLORS.portalHair}`,
         fontSize: "0.85rem",
         fontWeight: 500,
-        color: isWarn ? COLORS.warn : COLORS.textSecondary,
+        color: isWarn ? COLORS.warn : COLORS.fgSecondary,
         backdropFilter: "blur(8px)",
         WebkitBackdropFilter: "blur(8px)",
       }}
