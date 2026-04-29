@@ -124,6 +124,32 @@ const Cosmic = () => {
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
           }
+          @keyframes cosmic-star-drift {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(var(--drift-x, 0), var(--drift-y, 0)); }
+          }
+          .cosmic-star-drift {
+            animation-name: cosmic-star-drift;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            will-change: transform;
+          }
+          /* Lock color/opacity on every link state. !important here is
+             defensive — the personal-site's global stylesheet has an
+             "a:hover { color: rgb(46,89,186) !important }" rule that
+             would otherwise win the cascade and tint our text indigo
+             on hover. */
+          .cosmic-cta,
+          .cosmic-cta:link,
+          .cosmic-cta:visited,
+          .cosmic-cta:hover,
+          .cosmic-cta:focus,
+          .cosmic-cta:active {
+            color: #000000 !important;
+            opacity: 1 !important;
+            text-decoration: none !important;
+          }
           .cosmic-cta {
             display: inline-flex;
             align-items: center;
@@ -132,19 +158,19 @@ const Cosmic = () => {
             padding: 0 26px;
             border-radius: 9999px;
             background-color: ${COLORS.portal};
-            color: ${COLORS.midnight};
             font-family: inherit;
             font-size: 0.95rem;
             font-weight: 600;
             letter-spacing: 0.005em;
-            text-decoration: none;
             box-shadow: 0 0 20px 0 rgba(123, 127, 255, 0.30);
             transition:
               background-color 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
               transform 150ms cubic-bezier(0.2, 0.8, 0.2, 1);
           }
           .cosmic-cta:hover {
             background-color: ${COLORS.portalHover};
+            box-shadow: 0 0 40px 0 rgba(123, 127, 255, 0.35);
           }
           .cosmic-cta:active {
             transform: scale(0.98);
@@ -155,7 +181,9 @@ const Cosmic = () => {
             outline-offset: 2px;
           }
           @media (prefers-reduced-motion: reduce) {
-            .cosmic-fade, .cosmic-star-twinkle { animation: none !important; }
+            .cosmic-fade,
+            .cosmic-star-twinkle,
+            .cosmic-star-drift { animation: none !important; }
           }
         `}</style>
       </Helmet>
