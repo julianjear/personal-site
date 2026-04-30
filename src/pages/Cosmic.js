@@ -78,6 +78,15 @@ const Cosmic = () => {
     detectMacOSVersion().then((v) => setMacOSMajor(v));
   }, []);
 
+  // Fire `$pageview` exactly once per mount of the Cosmic page. PostHog's
+  // global autocapture is OFF (see src/analytics.js) so no other route on
+  // julian.ai produces events — this is the single signal that tells the
+  // landing-page funnel "user landed on /cosmic." `$pageview` auto-fills
+  // $current_url, $referrer, $browser, etc. — no extra props needed.
+  useEffect(() => {
+    track("$pageview");
+  }, []);
+
   useEffect(() => {
     fetch(`https://api.github.com/repos/${GITHUB_REPO}/releases/latest`)
       .then((r) => (r.ok ? r.json() : Promise.reject(r)))

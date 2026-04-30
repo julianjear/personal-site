@@ -49,13 +49,24 @@ export function initAnalytics() {
 
   posthog.init(POSTHOG_KEY, {
     api_host: POSTHOG_HOST,
-    // Autocapture handles $pageview and $autocapture (clicks, etc.) — leave
-    // on so the landing-page funnel works without us hand-wiring every
-    // anchor. We still emit a custom `cosmic download clicked` so dashboards
-    // don't have to filter autocaptured anchors by selector.
-    autocapture: true,
-    capture_pageview: true,
-    capture_pageleave: true,
+    // SCOPE: this site is julian.ai. We ONLY want to track the Cosmic
+    // landing page (/cosmic) — visits + download clicks. Every other
+    // page (resume, story, projects, etc.) should fire NOTHING.
+    //
+    // To enforce that:
+    //   · `autocapture: false`     — no automatic click / form / pageview
+    //                                events on any page.
+    //   · `capture_pageview: false` — don't auto-fire `$pageview` on the
+    //                                initial load OR on React Router
+    //                                navigations. The Cosmic page fires
+    //                                `$pageview` itself on mount.
+    //   · `capture_pageleave: false` — without scoped pageviews,
+    //                                pageleaves are meaningless and
+    //                                would record exits from non-tracked
+    //                                pages.
+    autocapture: false,
+    capture_pageview: false,
+    capture_pageleave: false,
     // Mark every event from julian.ai with `surface: "website"` so PostHog
     // dashboards can split website traffic from the macOS app's events
     // (which carry `build_channel` instead) cleanly.
