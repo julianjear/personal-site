@@ -47,6 +47,29 @@ export function initAnalytics() {
     return;
   }
 
+  // Internal-user opt-out for julian.ai. The Cosmic project's
+  // `test_account_filters` filters out identified users with
+  // `is_internal_user = true` (set in the macOS app's AuthService).
+  // The website is anonymous — no login — so the same person-level
+  // filter can't reach those visits. Instead I set a localStorage flag
+  // in my own browsers ONCE and from then on all my own /cosmic
+  // visits are silently dropped.
+  //
+  // To opt out on a new browser of mine, run this in DevTools console:
+  //   localStorage.setItem('cosmic.suppressAnalytics', 'true')
+  //
+  // To re-enable (debugging the analytics pipeline):
+  //   localStorage.removeItem('cosmic.suppressAnalytics')
+  try {
+    if (typeof window !== "undefined" &&
+        window.localStorage?.getItem("cosmic.suppressAnalytics") === "true") {
+      return;
+    }
+  } catch {
+    // Some sandboxed environments throw on localStorage access — fall
+    // through and let analytics run normally.
+  }
+
   posthog.init(POSTHOG_KEY, {
     api_host: POSTHOG_HOST,
     // SCOPE: this site is julian.ai. We ONLY want to track the Cosmic
