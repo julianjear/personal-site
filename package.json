@@ -31,6 +31,7 @@
     "framer-motion": "^6",
     "gh-pages": "^4.0.0",
     "jsx-runtime": "^1.2.0",
+    "posthog-js": "^1.372.5",
     "prop-types": "^15.8.1",
     "raw.macro": "^0.4.2",
     "react": "^18.2.0",

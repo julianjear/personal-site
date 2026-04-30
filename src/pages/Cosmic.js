@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import SkyOrb from "../components/SkyOrb";
 import Stars from "../components/Stars";
+import { track } from "../analytics";
 
 // Releases live in the cosmic-mac-app companion repo (mirrors the
 // makesomething pattern). The page hits the GitHub API on mount, finds
@@ -65,6 +66,10 @@ async function detectMacOSVersion() {
 
 const Cosmic = () => {
   const [downloadUrl, setDownloadUrl] = useState(FALLBACK_DOWNLOAD_URL);
+  // Tracks WHICH URL we have so the analytics event can report whether
+  // the user got the direct .dmg (GitHub API succeeded) or the fallback
+  // releases-page URL (API rate-limited or network blip).
+  const [downloadUrlSource, setDownloadUrlSource] = useState("fallback_releases_page");
   const [platform, setPlatform] = useState("macos");
   const [macOSMajor, setMacOSMajor] = useState(null);
 
@@ -78,7 +83,10 @@ const Cosmic = () => {
       .then((r) => (r.ok ? r.json() : Promise.reject(r)))
       .then((release) => {
         const dmg = release.assets?.find((a) => a.name.endsWith(".dmg"));
-        if (dmg) setDownloadUrl(dmg.browser_download_url);
+        if (dmg) {
+          setDownloadUrl(dmg.browser_download_url);
+          setDownloadUrlSource("github_api_dmg");
+        }
       })
       .catch(() => {
         // Silently keep the fallback releases-page URL.
@@ -88,6 +96,43 @@ const Cosmic = () => {
   const isMac = platform === "macos";
   const isOldMac = isMac && macOSMajor !== null && macOSMajor < 14;
   const canDownload = isMac && !isOldMac;
+
+  // `cosmic download blocked` — fires once per page load when the user
+  // CAN'T download (non-Mac, mobile, or pre-Sonoma Mac). Pairs with
+  // `cosmic download clicked` to give the funnel a denominator: of all
+  // the people who landed on /cosmic, what % were actually targetable
+  // for download? Drives decisions like "build a Linux preview" or
+  // "ship a manual-download landing".
+  //
+  // Gated on `macOSMajor !== null OR not Mac` so we don't fire while
+  // the version detection is still in-flight (would mis-classify Macs
+  // as "unknown" for the brief async window).
+  useEffect(() => {
+    const versionResolved = !isMac || macOSMajor !== null || platform === "mobile";
+    if (!versionResolved || canDownload) return;
+    const blockReason = !isMac
+      ? (platform === "mobile" ? "mobile" : "non_mac")
+      : "old_mac";
+    track("cosmic download blocked", {
+      block_reason: blockReason,
+      platform,
+      mac_version_major: macOSMajor,
+    });
+  }, [isMac, canDownload, platform, macOSMajor]);
+
+  // `cosmic download clicked` — fired BEFORE navigation. The download
+  // itself doesn't navigate (browsers handle .dmg as an attachment so
+  // the page stays open), but the fallback releases-page URL DOES, so
+  // we don't preventDefault — we let the browser do its thing and
+  // trust posthog-js's enqueue to fire before the navigation finishes.
+  // For the .dmg case, posthog has plenty of time to flush.
+  const handleDownloadClick = () => {
+    track("cosmic download clicked", {
+      download_url_source: downloadUrlSource,
+      mac_version_major: macOSMajor,
+      platform,
+    });
+  };
 
   return (
     <HelmetProvider>
@@ -262,7 +307,11 @@ const Cosmic = () => {
             }}
           >
             {canDownload ? (
-              <a className="cosmic-cta" href={downloadUrl}>
+              <a
+                className="cosmic-cta"
+                href={downloadUrl}
+                onClick={handleDownloadClick}
+              >
                 <AppleGlyph />
                 <span>Download for macOS</span>
               </a>
